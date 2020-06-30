@@ -12,5 +12,5 @@ jobs:
         uses: Ash258/Scoop-GithubActions@stable
         if: github.event.action == 'opened' || (github.event.action == 'labeled' && contains(github.event.issue.labels.*.name, 'verify'))
         env:
-          GITH_EMAIL: youremail@email.com
+          GITH_EMAIL: 20182921+KnotUntied@users.noreply.github.com
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
