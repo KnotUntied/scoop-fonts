@@ -1,0 +1,25 @@
+{
+    "version": "2.030R-ro/1.050R-it",
+    "license": "OFL-1.1",
+    "homepage": "https://github.com/adobe-fonts/source-code-pro",
+    "url": "https://github.com/adobe-fonts/source-code-pro/releases/download/2.030R-ro%2F1.050R-it/source-code-pro-2.030R-ro-1.050R-it.zip",
+    "hash": "da2ac159497d31b0c6d9daa8fc390fb8252e75b4a9805ace6a2c9cccaed4932e",
+    "extract_dir": "source-code-pro-2.030R-ro-1.050R-it\\TTF",
+    "installer": {
+        "script": [
+            "Get-ChildItem $dir -Filter '*.ttf' -Recurse | ForEach-Object {",
+            "  New-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value $_.Name -Force | Out-Null",
+            "  Copy-Item $_.FullName -destination \"$env:windir\\Fonts\"",
+            "}"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "Get-ChildItem $dir -filter '*.ttf' -Recurse | ForEach-Object {",
+            "  Remove-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
+            "  Remove-Item \"$env:windir\\Fonts\\$($_.Name)\" -Force -ErrorAction SilentlyContinue",
+            "}",
+            "Write-Host \"'Source Code Pro' TTF files have been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
+        ]
+    }
+}
