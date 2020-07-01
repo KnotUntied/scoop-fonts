@@ -24,7 +24,7 @@
             "  Remove-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
             "  Remove-Item \"$env:windir\\Fonts\\$($_.Name)\" -Force -ErrorAction SilentlyContinue",
             "}",
-            "Write-Host \"'Source Code Variable' TTF files have been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
+            "Write-Host \"'Source Code Pro' variable TTF files have been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
         ]
     }
 }
