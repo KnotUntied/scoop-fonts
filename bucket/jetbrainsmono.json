@@ -1,0 +1,38 @@
+{
+    "version": "2.001",
+    "license": "Apache-2.0",
+    "homepage": "https://www.jetbrains.com/lp/mono/",
+    "url": "https://download.jetbrains.com/fonts/JetBrainsMono-2.001.zip",
+    "hash": "f877b601e737155a14599bab8af6a02e565e938d92dd5dc98cd98c62e7986d64",
+    "extract_dir": "ttf",
+    "checkver": {
+        "github": "https://github.com/JetBrains/JetBrainsMono"
+    },
+    "autoupdate": {
+        "url": "https://download.jetbrains.com/fonts/JetBrainsMono-$version.zip"
+    },
+    "pre_install": [
+        "Remove-Item \"$dir\\No Ligatures\" -Recurse",
+        "Remove-Item \"$dir\\Variable\" -Recurse"
+    ],
+    "installer": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
+            "Get-ChildItem $dir -Filter '*.ttf' -Recurse | ForEach-Object {",
+            "  New-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value $_.Name -Force | Out-Null",
+            "  Copy-Item $_.FullName -destination \"$env:windir\\Fonts\"",
+            "}",
+            "Write-Host \"Remember to uninstall this app before installing a JetBrains IDE.\" -Foreground Magenta"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
+            "Get-ChildItem $dir -filter '*.ttf' -Recurse | ForEach-Object {",
+            "  Remove-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
+            "  Remove-Item \"$env:windir\\Fonts\\$($_.Name)\" -Force -ErrorAction SilentlyContinue",
+            "}",
+            "Write-Host \"'JetBrains Mono' TTF files have been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
+        ]
+    }
+}
