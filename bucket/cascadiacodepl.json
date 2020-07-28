@@ -9,11 +9,7 @@
     "autoupdate": {
         "url": "https://github.com/microsoft/cascadia-code/releases/download/v$version/CascadiaCode_$version.zip"
     },
-    "pre_install": [
-        "Remove-Item \"$dir\\CascadiaCode.ttf\"",
-        "Remove-Item \"$dir\\CascadiaMono.ttf\"",
-        "Remove-Item \"$dir\\CascadiaMonoPL.ttf\""
-    ],
+    "pre_install": "Get-ChildItem $dir -Exclude CascadiaCodePL.ttf | Remove-Item",
     "installer": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop install $app'\"; exit 1 }",
@@ -30,7 +26,7 @@
             "    Remove-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
             "    Remove-Item \"$env:windir\\Fonts\\$($_.Name)\" -Force -ErrorAction SilentlyContinue",
             "}",
-            "Write-Host \"'Cascadia Mono PL' has been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
+            "Write-Host \"'Cascadia Code PL' has been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
         ]
     }
 }
