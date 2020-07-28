@@ -9,11 +9,7 @@
     "autoupdate": {
         "url": "https://github.com/microsoft/cascadia-code/releases/download/v$version/CascadiaCode_$version.zip"
     },
-    "pre_install": [
-        "Remove-Item \"$dir\\CascadiaCode.ttf\"",
-        "Remove-Item \"$dir\\CascadiaMono.ttf\"",
-        "Remove-Item \"$dir\\CascadiaCodePL.ttf\""
-    ],
+    "pre_install": "Get-ChildItem $dir -Exclude CascadiaMonoPL.ttf | Remove-Item",
     "installer": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop install $app'\"; exit 1 }",
