@@ -1,9 +1,9 @@
 {
-    "version": "3.3.1",
+    "version": "3.3.1.3",
     "license": "OFL-1.1",
     "homepage": "https://github.com/KnotUntied/iosevka-custom",
-    "url": "https://github.com/KnotUntied/iosevka-custom/releases/download/3.3.1/iosevka-custom-3.3.1.zip",
-    "hash": "79b0ab36941af6cfe830c6e49202db5d2ef04b287e6a98a4658aa5eb81ab2a2c",
+    "url": "https://github.com/KnotUntied/iosevka-custom/releases/download/3.3.1.3/iosevka-custom-3.3.1.3.zip",
+    "hash": "ea531a8f790fdaee4c8b4ad8536dabd4ae6097efef4594313bbe73cd2b15ef3d",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/KnotUntied/iosevka-custom/releases/download/$version/iosevka-custom-$version.zip"
