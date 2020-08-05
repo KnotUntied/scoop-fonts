@@ -1,0 +1,30 @@
+{
+    "version": "1.4.1",
+    "license": "MIT",
+    "homepage": "https://rubjo.github.io/victor-mono/",
+    "url": "https://rubjo.github.io/victor-mono/VictorMonoAll.zip",
+    "hash": "f2ed8df22899bf28672dd782048a5a0d630ac752062a589fc584c1e37dea0282",
+    "extract_dir": "TTF",
+    "checkver": {
+        "github": "https://github.com/rubjo/victor-mono"
+    },
+    "installer": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
+            "Get-ChildItem $dir -Filter '*.ttf' -Recurse | ForEach-Object {",
+            "  New-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value $_.Name -Force | Out-Null",
+            "  Copy-Item $_.FullName -destination \"$env:windir\\Fonts\"",
+            "}",
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
+            "Get-ChildItem $dir -filter '*.ttf' -Recurse | ForEach-Object {",
+            "  Remove-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
+            "  Remove-Item \"$env:windir\\Fonts\\$($_.Name)\" -Force -ErrorAction SilentlyContinue",
+            "}",
+            "Write-Host \"'Victor Mono' TTF files have been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
+        ]
+    }
+}
