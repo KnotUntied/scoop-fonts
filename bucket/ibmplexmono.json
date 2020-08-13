@@ -1,0 +1,31 @@
+{
+    "version": "5.1.0",
+    "license": "OFL-1.1",
+    "homepage": "https://github.com/IBM/plex",
+    "url": "https://github.com/IBM/plex/releases/download/v5.1.0/TrueType.zip",
+    "hash": "ca0c449bb5624c43870623f63d9dba5453fef5a7ba37636ede416971e8514406",
+    "extract_dir": "TrueType\\IBM-Plex-Mono",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/IBM/plex/releases/download/v$version/TrueType.zip"
+    },
+    "installer": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
+            "Get-ChildItem $dir -Filter '*.ttf' -Recurse | ForEach-Object {",
+            "  New-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value $_.Name -Force | Out-Null",
+            "  Copy-Item $_.FullName -destination \"$env:windir\\Fonts\"",
+            "}"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
+            "Get-ChildItem $dir -filter '*.ttf' -Recurse | ForEach-Object {",
+            "  Remove-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
+            "  Remove-Item \"$env:windir\\Fonts\\$($_.Name)\" -Force -ErrorAction SilentlyContinue",
+            "}",
+            "Write-Host \"'IBM Plex Mono' TTF files have been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
+        ]
+    }
+}
