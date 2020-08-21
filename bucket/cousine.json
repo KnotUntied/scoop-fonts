@@ -1,0 +1,36 @@
+{
+    "version": "1.22",
+    "license": "OFL-1.1",
+    "homepage": "https://fonts.google.com/specimen/Cousine",
+    "url": [
+        "https://github.com/googlefonts/noto-fonts/raw/master/hinted/Cousine/Cousine-Bold.ttf",
+        "https://github.com/googlefonts/noto-fonts/raw/master/hinted/Cousine/Cousine-BoldItalic.ttf",
+        "https://github.com/googlefonts/noto-fonts/raw/master/hinted/Cousine/Cousine-Italic.ttf",
+        "https://github.com/googlefonts/noto-fonts/raw/master/hinted/Cousine/Cousine-Regular.ttf"
+    ],
+    "hash": [
+        "cc9745e76a63d8efbdfff37c5682923d6c41ad34395ead3d935a2ef941e77e6b",
+        "962bb1eef7239428b49884a19cdf0b24dfb015fe9b9fe9f3db790abe345a2c2d",
+        "fb45aaaf127ffd7904351d43d7ab18b483818e1f899fd6927d6938fd9b98ed7b",
+        "51d70da771860bf4dfc8ee771929db70b9ade56ea72688e7daad635295f570df"
+    ],
+    "installer": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
+            "Get-ChildItem $dir -Filter '*.ttf' -Recurse | ForEach-Object {",
+            "  New-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value $_.Name -Force | Out-Null",
+            "  Copy-Item $_.FullName -destination \"$env:windir\\Fonts\"",
+            "}"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
+            "Get-ChildItem $dir -filter '*.ttf' -Recurse | ForEach-Object {",
+            "  Remove-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
+            "  Remove-Item \"$env:windir\\Fonts\\$($_.Name)\" -Force -ErrorAction SilentlyContinue",
+            "}",
+            "Write-Host \"'Cousine' TTF files have been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
+        ]
+    }
+}
