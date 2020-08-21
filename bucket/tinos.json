@@ -1,0 +1,36 @@
+{
+    "version": "1.32",
+    "license": "OFL-1.1",
+    "homepage": "https://fonts.google.com/specimen/Tinos",
+    "url": [
+        "https://github.com/googlefonts/noto-fonts/raw/master/hinted/Tinos/Tinos-Bold.ttf",
+        "https://github.com/googlefonts/noto-fonts/raw/master/hinted/Tinos/Tinos-BoldItalic.ttf",
+        "https://github.com/googlefonts/noto-fonts/raw/master/hinted/Tinos/Tinos-Italic.ttf",
+        "https://github.com/googlefonts/noto-fonts/raw/master/hinted/Tinos/Tinos-Regular.ttf"
+    ],
+    "hash": [
+        "809688da0fe8e163c5c14d5548963dba949d1ca83efb473e8acc296c6fdc6818",
+        "0f2b27ec7378068b673c14f73802dc10f4e842f775f7e5052ad1d37ff1430e3d",
+        "e9037c6b9481541319102b9d57c56f0a37427fa9442e214dc78d720632b0184c",
+        "5921d0285d28a3541784b74bd623f04dab60992fce21cc1039ddc35ad8fff035"
+    ],
+    "installer": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
+            "Get-ChildItem $dir -Filter '*.ttf' -Recurse | ForEach-Object {",
+            "  New-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value $_.Name -Force | Out-Null",
+            "  Copy-Item $_.FullName -destination \"$env:windir\\Fonts\"",
+            "}"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
+            "Get-ChildItem $dir -filter '*.ttf' -Recurse | ForEach-Object {",
+            "  Remove-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
+            "  Remove-Item \"$env:windir\\Fonts\\$($_.Name)\" -Force -ErrorAction SilentlyContinue",
+            "}",
+            "Write-Host \"'Tinos' TTF files have been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
+        ]
+    }
+}
