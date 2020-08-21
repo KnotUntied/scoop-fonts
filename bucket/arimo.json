@@ -1,0 +1,36 @@
+{
+    "version": "1.32",
+    "license": "OFL-1.1",
+    "homepage": "https://fonts.google.com/specimen/Arimo",
+    "url": [
+        "https://github.com/googlefonts/noto-fonts/raw/master/hinted/Arimo/Arimo-Bold.ttf",
+        "https://github.com/googlefonts/noto-fonts/raw/master/hinted/Arimo/Arimo-BoldItalic.ttf",
+        "https://github.com/googlefonts/noto-fonts/raw/master/hinted/Arimo/Arimo-Italic.ttf",
+        "https://github.com/googlefonts/noto-fonts/raw/master/hinted/Arimo/Arimo-Regular.ttf"
+    ],
+    "hash": [
+        "0b5422b854f9a76ff56f894dc76d440eaca6489c119168f00cd176a5a8617013",
+        "3047db0688158ec0d8008af57299deca86a4994a408ab5133fea01327bad9040",
+        "22d2faa0ab0c82b3dff77b5bbb2698293b31199e4f5af72b4a70c3e64193e86f",
+        "e9aae1ebba96d3a4137e5b355040506d025ee690db24213fcad650200dbbbf42"
+    ],
+    "installer": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
+            "Get-ChildItem $dir -Filter '*.ttf' -Recurse | ForEach-Object {",
+            "  New-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value $_.Name -Force | Out-Null",
+            "  Copy-Item $_.FullName -destination \"$env:windir\\Fonts\"",
+            "}"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
+            "Get-ChildItem $dir -filter '*.ttf' -Recurse | ForEach-Object {",
+            "  Remove-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
+            "  Remove-Item \"$env:windir\\Fonts\\$($_.Name)\" -Force -ErrorAction SilentlyContinue",
+            "}",
+            "Write-Host \"'Arimo' TTF files have been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
+        ]
+    }
+}
