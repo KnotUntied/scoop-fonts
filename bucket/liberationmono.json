@@ -5,6 +5,7 @@
     "url": "https://github.com/liberationfonts/liberation-fonts/files/4743886/liberation-fonts-ttf-2.1.1.tar.gz",
     "hash": "8ee2c16fe0f055e60dd8375449aff72d25dd623b9cc6f24790ce9d2e91446fca",
     "extract_dir": "liberation-fonts-ttf-2.1.1",
+    "checkver": "github",
     "pre_install": "Get-ChildItem $dir -Exclude LiberationMono-Bold.ttf,LiberationMono-BoldItalic.ttf,LiberationMono-Italic.ttf,LiberationMono-Regular.ttf | Remove-Item",
     "installer": {
         "script": [
