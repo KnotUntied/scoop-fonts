@@ -1,0 +1,63 @@
+{
+    "version": "5.1.0",
+    "license": "OFL-1.1",
+    "homepage": "https://github.com/IBM/plex",
+    "url": [
+        "https://github.com/IBM/plex/raw/master/IBM-Plex-Sans/fonts/complete/ttf/IBMPlexSans-Bold.ttf",
+        "https://github.com/IBM/plex/raw/master/IBM-Plex-Sans/fonts/complete/ttf/IBMPlexSans-BoldItalic.ttf",
+        "https://github.com/IBM/plex/raw/master/IBM-Plex-Sans/fonts/complete/ttf/IBMPlexSans-ExtraLight.ttf",
+        "https://github.com/IBM/plex/raw/master/IBM-Plex-Sans/fonts/complete/ttf/IBMPlexSans-ExtraLightItalic.ttf",
+        "https://github.com/IBM/plex/raw/master/IBM-Plex-Sans/fonts/complete/ttf/IBMPlexSans-Italic.ttf",
+        "https://github.com/IBM/plex/raw/master/IBM-Plex-Sans/fonts/complete/ttf/IBMPlexSans-Light.ttf",
+        "https://github.com/IBM/plex/raw/master/IBM-Plex-Sans/fonts/complete/ttf/IBMPlexSans-LightItalic.ttf",
+        "https://github.com/IBM/plex/raw/master/IBM-Plex-Sans/fonts/complete/ttf/IBMPlexSans-Medium.ttf",
+        "https://github.com/IBM/plex/raw/master/IBM-Plex-Sans/fonts/complete/ttf/IBMPlexSans-MediumItalic.ttf",
+        "https://github.com/IBM/plex/raw/master/IBM-Plex-Sans/fonts/complete/ttf/IBMPlexSans-Regular.ttf",
+        "https://github.com/IBM/plex/raw/master/IBM-Plex-Sans/fonts/complete/ttf/IBMPlexSans-SemiBold.ttf",
+        "https://github.com/IBM/plex/raw/master/IBM-Plex-Sans/fonts/complete/ttf/IBMPlexSans-SemiBoldItalic.ttf",
+        "https://github.com/IBM/plex/raw/master/IBM-Plex-Sans/fonts/complete/ttf/IBMPlexSans-Text.ttf",
+        "https://github.com/IBM/plex/raw/master/IBM-Plex-Sans/fonts/complete/ttf/IBMPlexSans-TextItalic.ttf",
+        "https://github.com/IBM/plex/raw/master/IBM-Plex-Sans/fonts/complete/ttf/IBMPlexSans-Thin.ttf",
+        "https://github.com/IBM/plex/raw/master/IBM-Plex-Sans/fonts/complete/ttf/IBMPlexSans-ThinItalic.ttf",
+        "https://github.com/IBM/plex/raw/master/IBM-Plex-Sans/fonts/complete/ttf/license.txt"
+    ],
+    "hash": [
+        "1911eaa6729443939d131725b231eb59b0926892e78491e55044abbaee1d3c28",
+        "7e9b7f85910ecd707adaf362798d244e956379894ecfd00bdffcba1c1a38b855",
+        "c5103eaefa9c0ea28300507405f9f5dea7000a15e28b7d5db2faf39efdb8bcc5",
+        "9c5da29927cedf11866cc5cbb01b4d3c1b71c5f95a6d352fcc04d05e3b104f02",
+        "9894bbc52a6b8b7feab7a02b37da41f63e1b0267157114b7c98858dd8ba6a90c",
+        "615561e956a6676c0177a010f83886c8f1e2498875c82ebc9dbc18e2a2ec0548",
+        "c02d627075f07902b710284bf47bc0b9d814d11db97e85ac1f1a7f8657bf2a7e",
+        "42c54a359ebc298eada2b3e06a4ef722631484a91eb8febc27dfd967c8157e65",
+        "f607833ab2d791ffd17ed3fe6054ff35720a9c6f4f890911e4ab673d4a156131",
+        "208607f209c1277f4e998624d163d4a5c8c562ddc48bdadbb4393e21c21772da",
+        "af6c713f4b5066cf70eacc114b0dcd446f5b3516bb4f61bf0d70837c6cff288c",
+        "eb4dc8004b23849c6633a82e5b78df4ff28bf4478f533b29901e112d29028838",
+        "30074706f3b73690db2570dd82e5d00108335e1a5e90f1d9abcb51106d10bccc",
+        "514cf91a4a8884fed814e224b3734e32527c231585e703a52386a35b43c05a65",
+        "4f9d0f71a528dfc73917c79726e58232cc0e0983039169b2b70b2c45770016db",
+        "0585842bbf1215d2f0cb90f64fbc5c6c5bad5973ea34da180772e6647aefcbb7",
+        "91c25c350d3cac39da2736d74f7ba37ef648f5237a4e330a240615bc8d8c4360"
+    ],
+    "checkver": "github",
+    "installer": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
+            "Get-ChildItem $dir -Filter '*.ttf' -Recurse | ForEach-Object {",
+            "  New-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value $_.Name -Force | Out-Null",
+            "  Copy-Item $_.FullName -destination \"$env:windir\\Fonts\"",
+            "}"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
+            "Get-ChildItem $dir -filter '*.ttf' -Recurse | ForEach-Object {",
+            "  Remove-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
+            "  Remove-Item \"$env:windir\\Fonts\\$($_.Name)\" -Force -ErrorAction SilentlyContinue",
+            "}",
+            "Write-Host \"'IBM Plex Sans' TTF files have been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
+        ]
+    }
+}
