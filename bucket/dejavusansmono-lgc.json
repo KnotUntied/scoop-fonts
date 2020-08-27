@@ -5,7 +5,7 @@
     "url": "https://github.com/dejavu-fonts/dejavu-fonts/releases/download/version_2_37/dejavu-lgc-fonts-ttf-2.37.zip",
     "hash": "bc73bd1c64299a95951fd8c1d493d391ded78cef5b9d3dd3df5859e1f85f5ec6",
     "extract_dir": "dejavu-lgc-fonts-ttf-2.37\\ttf",
-    "pre_install": "Get-ChildItem $dir -Exclude DejaVuLGCSansMono.ttf,DejaVuLGCSansMono-Bold.ttf,DejaVuLGCSansMono-BoldOblique.ttf,DejaVuLGCSansMono-Oblique.ttf | Remove-Item",
+    "pre_install": "Get-ChildItem $dir -Exclude DejaVuLGCSansMono*.ttf | Remove-Item",
     "installer": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop install $app'\"; exit 1 }",
