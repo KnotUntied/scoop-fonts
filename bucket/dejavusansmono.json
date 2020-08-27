@@ -5,7 +5,7 @@
     "url": "https://github.com/dejavu-fonts/dejavu-fonts/releases/download/version_2_37/dejavu-fonts-ttf-2.37.zip",
     "hash": "7576310b219e04159d35ff61dd4a4ec4cdba4f35c00e002a136f00e96a908b0a",
     "extract_dir": "dejavu-fonts-ttf-2.37\\ttf",
-    "pre_install": "Get-ChildItem $dir -Exclude DejaVuSansMono.ttf,DejaVuSansMono-Bold.ttf,DejaVuSansMono-BoldOblique.ttf,DejaVuSansMono-Oblique.ttf | Remove-Item",
+    "pre_install": "Get-ChildItem $dir -Exclude DejaVuSansMono*.ttf | Remove-Item",
     "installer": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop install $app'\"; exit 1 }",
