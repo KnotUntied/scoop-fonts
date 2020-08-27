@@ -5,7 +5,6 @@
     "url": "https://github.com/adobe-fonts/source-code-pro/releases/download/2.030R-ro%2F1.050R-it/source-code-pro-2.030R-ro-1.050R-it.zip",
     "hash": "da2ac159497d31b0c6d9daa8fc390fb8252e75b4a9805ace6a2c9cccaed4932e",
     "extract_dir": "source-code-pro-2.030R-ro-1.050R-it\\TTF",
-    "pre_install": "Remove-Item \"$dir\\source-code-pro-2.030R-ro-1.050R-it\"",
     "installer": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
