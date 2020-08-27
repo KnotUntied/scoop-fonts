@@ -8,7 +8,7 @@
     "autoupdate": {
         "url": "https://github.com/madmalik/mononoki/releases/download/$version/mononoki.zip"
     },
-    "pre_install": "Get-ChildItem $dir -Exclude mononoki-Bold.ttf,mononoki-BoldItalic.ttf,mononoki-Italic.ttf,mononoki-Regular.ttf | Remove-Item",
+    "pre_install": "Get-ChildItem $dir -Exclude mononoki-*.ttf | Remove-Item",
     "installer": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop install $app'\"; exit 1 }",
