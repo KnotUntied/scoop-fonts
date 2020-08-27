@@ -12,7 +12,7 @@
         "url": "https://github.com/daltonmaag/ubuntu/releases/download/v$version/ubuntu-font-family-$version.zip",
         "extract_dir": "ubuntu-font-family-$version"
     },
-    "pre_install": "Get-ChildItem $dir -Exclude LICENCE.txt,UbuntuMono-B.ttf,UbuntuMono-BI.ttf,UbuntuMono-R.ttf,UbuntuMono-RI.ttf | Remove-Item",
+    "pre_install": "Get-ChildItem $dir -Exclude LICENCE.txt,UbuntuMono-*.ttf | Remove-Item",
     "installer": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
