@@ -6,11 +6,11 @@
     "hash": "8ee2c16fe0f055e60dd8375449aff72d25dd623b9cc6f24790ce9d2e91446fca",
     "extract_dir": "liberation-fonts-ttf-2.1.1",
     "checkver": "github",
-    "pre_install": "Get-ChildItem $dir -Exclude LiberationMono-*.ttf | Remove-Item",
+    "pre_install": "Get-ChildItem $dir -Exclude LiberationMono-*.ttf,LICENSE | Remove-Item",
     "installer": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop install $app'\"; exit 1 }",
-            "Get-ChildItem $dir -filter 'CascadiaMonoPL.ttf' | ForEach-Object {",
+            "Get-ChildItem $dir -filter '*.ttf' | ForEach-Object {",
             "    New-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value $_.Name -Force | Out-Null",
             "    Copy-Item $_.FullName -destination \"$env:windir\\Fonts\"",
             "}"
@@ -19,7 +19,7 @@
     "uninstaller": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop uninstall $app'\"; exit 1 }",
-            "Get-ChildItem $dir -filter 'CascadiaMonoPL.ttf' | ForEach-Object {",
+            "Get-ChildItem $dir -filter '*.ttf' | ForEach-Object {",
             "    Remove-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
             "    Remove-Item \"$env:windir\\Fonts\\$($_.Name)\" -Force -ErrorAction SilentlyContinue",
             "}",
