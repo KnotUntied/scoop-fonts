@@ -1,0 +1,67 @@
+{
+    "version": "7.210",
+    "license": "OFL-1.1",
+    "homepage": "https://github.com/JulietaUla/Montserrat",
+    "url": [
+        "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-Black.ttf",
+        "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-BlackItalic.ttf",
+        "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-Bold.ttf",
+        "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-BoldItalic.ttf",
+        "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-ExtraBold.ttf",
+        "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-ExtraBoldItalic.ttf",
+        "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-ExtraLight.ttf",
+        "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-ExtraLightItalic.ttf",
+        "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-Italic.ttf",
+        "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-Light.ttf",
+        "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-LightItalic.ttf",
+        "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-Medium.ttf",
+        "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-MediumItalic.ttf",
+        "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-Regular.ttf",
+        "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-SemiBold.ttf",
+        "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-SemiBoldItalic.ttf",
+        "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-Thin.ttf",
+        "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-ThinItalic.ttf",
+        "https://raw.githubusercontent.com/JulietaUla/Montserrat/master/OFL.txt"
+    ],
+    "hash": [
+        "6da2159cea6c7b3efcf59b468ab53972bdf8f218d4c74d22c7ed61b3600667a7",
+        "806eb5b1932a8534f1bab57275f3c33bcff63ca141e2aa2ccdb5dd9ee37c388d",
+        "6968425a84ce1b40fe4b52163436a287ddd1b52f41d883633e90af1cb91729ed",
+        "d5a1d6773f23f3229dd5aae656adf7a6cd722d53eec10a477b0325afe3e8e36a",
+        "7ff6d9cd625cf2ebea9306587ce48f24f8eddd50cf9322d78d6b495763894f1b",
+        "e332516ac115cd235c5d046e27e8dc7a2f0a61d499760c8f11f28674ce1cd7c1",
+        "03cbc859970ebe69f62820172627fd382432eab816dbff453fbea3e12ab3cb18",
+        "bee31e842a2b80479736e9110e7d00941c0e42b73beac543891c2908488ff153",
+        "5bd1aa7f381ebd9e6293b16c7537bc0a9e6d0d5a2f06f4acd11d1867e2ac4689",
+        "fa9081aa8b1c6121cb132398706af19b9b026b722cd2851224a18980d3e33a24",
+        "eccdb9c51e1d7a4e25534ce536e90d0590a76a5bd099917cf1ae2b93a2f809c7",
+        "9008dbf546a57c3e38b637342ce0e682c077b6a5f806af59d529db3db07f73f9",
+        "0259dfadb40048139da2d72d33c8e675c02888eff0b9c72532bea4f3816603b6",
+        "fad70c3dd42ca862e6fca1185d2b5513309ba1f83d11ecc777f985d3ef681575",
+        "aae2aecae125b2f59df52bad379ffff4c9e1ef84d3df03c19df402db103cb707",
+        "1fd050f3c0a24fed0dc93e860089963094b84a16332b465da29f31287954b35f",
+        "92f3b0a939ac80098484a6454a0e18fe1bd278bed33a06da7a02a789aa17dbe6",
+        "57ce14f41be922c45e4f8e4ebc18a884e34e73639f245fdd2df041d8117a6f82",
+        "41f82bb4d24b304f30f7136bc47abdd083782e4265c984160f5649d1e78ea49c"
+    ],
+    "checkver": "github",
+    "installer": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
+            "Get-ChildItem $dir -Filter '*.ttf' -Recurse | ForEach-Object {",
+            "  New-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value $_.Name -Force | Out-Null",
+            "  Copy-Item $_.FullName -destination \"$env:windir\\Fonts\"",
+            "}"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
+            "Get-ChildItem $dir -filter '*.ttf' -Recurse | ForEach-Object {",
+            "  Remove-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
+            "  Remove-Item \"$env:windir\\Fonts\\$($_.Name)\" -Force -ErrorAction SilentlyContinue",
+            "}",
+            "Write-Host \"'Montserrat Alternates' TTF files have been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
+        ]
+    }
+}
