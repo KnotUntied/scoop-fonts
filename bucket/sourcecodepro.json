@@ -4,7 +4,7 @@
     "homepage": "https://github.com/adobe-fonts/source-code-pro",
     "url": "https://github.com/adobe-fonts/source-code-pro/releases/download/2.032R-ro%2F1.052R-it%2F1.012R-VAR/TTF-source-code-pro-2.032R-ro-1.052R-it.zip",
     "hash": "026d7644bed97a7934caa63eacd9fd83beeacfd301d9d29fcc899f32d4004a12",
-    "extract_dir": "source-code-pro-2.030R-ro-1.050R-it\\TTF",
+    "extract_dir": "TTF",
     "installer": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
