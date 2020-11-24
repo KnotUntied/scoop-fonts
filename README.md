@@ -2,8 +2,6 @@
 
 `scoop bucket add fonts 'https://github.com/KnotUntied/scoop-fonts.git'`
 
-See this bucket's [raison d'être](https://github.com/microsoft/cascadia-code/wiki/Double-installation-issue).
-
 > Note: Admin rights are required to install these fonts, because their installers modify the registry. Additionally, restarting your computer after uninstalling a font is necessary for the font to be fully removed.
 
 See also the officially recognized [nerd-fonts](https://github.com/matthewjberger/scoop-nerd-fonts) bucket.
