@@ -1,0 +1,45 @@
+{
+    "version": "1.066",
+    "license": "OFL-1.1",
+    "homepage": "https://github.com/arrowtype/recursive",
+    "url": [
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.066/Recursive_Code/RecMonoCasual/RecMonoCasual-Bold-1.066.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.066/Recursive_Code/RecMonoCasual/RecMonoCasual-BoldItalic-1.066.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.066/Recursive_Code/RecMonoCasual/RecMonoCasual-Italic-1.066.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.066/Recursive_Code/RecMonoCasual/RecMonoCasual-Regular-1.066.ttf"
+    ],
+    "hash": [
+        "d74008cd20163218585a8330b62feff527926e2c474e6a0fd7ae8822ccda5d6f",
+        "f7c1f3b4b8e21eb8a8e36f9f3fe3a053757f93b5e0c35211ac9cde5d312062b3",
+        "5790659b54693c95a823f44143824371e94756dada2ef9b52176d0b0e14af412",
+        "6f345efdfcf81a5afaa7dcc6666632908f7dfef3a57e42eda2f6715084a84e88"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": [
+            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/RecMonoCasual/RecMonoCasual-Bold-$version.ttf",
+            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/RecMonoCasual/RecMonoCasual-BoldItalic-$version.ttf",
+            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/RecMonoCasual/RecMonoCasual-Italic-$version.ttf",
+            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/RecMonoCasual/RecMonoCasual-Regular-$version.ttf"
+        ]
+    },
+    "installer": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
+            "Get-ChildItem $dir -Filter '*.ttf' -Recurse | ForEach-Object {",
+            "  New-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value $_.Name -Force | Out-Null",
+            "  Copy-Item $_.FullName -destination \"$env:windir\\Fonts\"",
+            "}"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
+            "Get-ChildItem $dir -filter '*.ttf' -Recurse | ForEach-Object {",
+            "  Remove-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
+            "  Remove-Item \"$env:windir\\Fonts\\$($_.Name)\" -Force -ErrorAction SilentlyContinue",
+            "}",
+            "Write-Host \"'Rec Mono Casual' TTF files have been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
+        ]
+    }
+}
