@@ -1,5 +1,5 @@
 {
-    "version": "1.4.1",
+    "version": "1.4.2",
     "license": "MIT",
     "homepage": "https://rubjo.github.io/victor-mono/",
     "url": "https://rubjo.github.io/victor-mono/VictorMonoAll.zip",
@@ -7,6 +7,9 @@
     "extract_dir": "TTF",
     "checkver": {
         "github": "https://github.com/rubjo/victor-mono"
+    },
+    "autoupdate": {
+        "url": "https://rubjo.github.io/victor-mono/VictorMonoAll.zip"
     },
     "installer": {
         "script": [
