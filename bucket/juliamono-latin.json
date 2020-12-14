@@ -15,7 +15,7 @@
             "Get-ChildItem $dir -filter '*.ttf' -Recurse | ForEach-Object {",
             "  New-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value $_.Name -Force | Out-Null",
             "  Copy-Item $_.FullName -destination \"$env:windir\\Fonts\"",
-            "}",
+            "}"
         ]
     },
     "uninstaller": {
