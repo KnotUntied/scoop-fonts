@@ -1,26 +1,26 @@
 {
-    "version": "1.066",
+    "version": "1.069",
     "license": "OFL-1.1",
     "homepage": "https://github.com/arrowtype/recursive",
     "url": [
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.066/Recursive_Code/RecMonoSemicasual/RecMonoSemicasual-Bold-1.066.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.066/Recursive_Code/RecMonoSemicasual/RecMonoSemicasual-BoldItalic-1.066.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.066/Recursive_Code/RecMonoSemicasual/RecMonoSemicasual-Italic-1.066.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.066/Recursive_Code/RecMonoSemicasual/RecMonoSemicasual-Regular-1.066.ttf"
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.069/Recursive_Code/Semicasual/RecMonoSemicasual-Bold-1.069.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.069/Recursive_Code/Semicasual/RecMonoSemicasual-BoldItalic-1.069.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.069/Recursive_Code/Semicasual/RecMonoSemicasual-Italic-1.069.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.069/Recursive_Code/Semicasual/RecMonoSemicasual-Regular-1.069.ttf"
     ],
     "hash": [
-        "08bac9b4ec23ec7544bccb36f87025ed84a254ad58bfe64b90326cc191821bfa",
-        "d04a36b847d75f9a02133cadb102ce7521ae7a3f584ec113be715d130e4ff0f3",
-        "a7bfdc462dfd9dc2aaf3fefa691b4d34bb522a947ee1fe39c50c2fe50126c588",
-        "2d95d33cb685c7dd3cc2fb2225c6b9ca6ae3e34444dcec02c66db25ffe1637a3"
+        "8aa0b392d49ed60a6478f03a74734a1c1cda0b3dff0180285d749c46379dbde6",
+        "007bc39f4d04870e5b5eaa5c4d60001e42372a646c531d49b145cce61ded6c34",
+        "f98b6a8591c3156cd991883cc48b35de93367fc8262f85b3ad19a663999ea4bf",
+        "9eec91ddadea7bc31980ae1776076c129f2faa384fed89da27e2b0fed24da8e5"
     ],
     "checkver": "github",
     "autoupdate": {
         "url": [
-            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/RecMonoSemicasual/RecMonoSemicasual-Bold-$version.ttf",
-            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/RecMonoSemicasual/RecMonoSemicasual-BoldItalic-$version.ttf",
-            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/RecMonoSemicasual/RecMonoSemicasual-Italic-$version.ttf",
-            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/RecMonoSemicasual/RecMonoSemicasual-Regular-$version.ttf"
+            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/Semicasual/RecMonoSemicasual-Bold-$version.ttf",
+            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/Semicasual/RecMonoSemicasual-BoldItalic-$version.ttf",
+            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/Semicasual/RecMonoSemicasual-Italic-$version.ttf",
+            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/Semicasual/RecMonoSemicasual-Regular-$version.ttf"
         ]
     },
     "installer": {
