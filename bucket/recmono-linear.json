@@ -1,26 +1,26 @@
 {
-    "version": "1.066",
+    "version": "1.069",
     "license": "OFL-1.1",
     "homepage": "https://github.com/arrowtype/recursive",
     "url": [
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.066/Recursive_Code/RecMonoLinear/RecMonoLinear-Bold-1.066.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.066/Recursive_Code/RecMonoLinear/RecMonoLinear-BoldItalic-1.066.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.066/Recursive_Code/RecMonoLinear/RecMonoLinear-Italic-1.066.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.066/Recursive_Code/RecMonoLinear/RecMonoLinear-Regular-1.066.ttf"
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.069/Recursive_Code/Linear/RecMonoLinear-Bold-1.069.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.069/Recursive_Code/Linear/RecMonoLinear-BoldItalic-1.069.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.069/Recursive_Code/Linear/RecMonoLinear-Italic-1.069.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.069/Recursive_Code/Linear/RecMonoLinear-Regular-1.069.ttf"
     ],
     "hash": [
-        "5b929e5fd5f02f4392337580d202b7b15e792dd329faaf702b8be9d8a73152cd",
-        "3134e8d199166b83f73d2e8aefe36c44fe4e78b3135f418ac205f0e29b523d11",
-        "17daa0e0fbe78a80b11e94fd94e6ac92684265765f92286e391c13afe4d1d9af",
-        "95433b40eb4eecd4c6f9d2367916893bdb943ed48694c5c5caa18b2313e9c3b5"
+        "669dcc3533a6a33f19a826b32ae9df7183d84715cc36b55eeec4c01f75cffd9e",
+        "6ec7aeae6541653be77574e3cd2eedfeb285bed9aa50793862057e2ac3c3f27e",
+        "91feed00e78ff3e59e3b5a4ca5dd911e4bb41e38bcf54e0b15857266421c4995",
+        "400761020a9a95e63d59bc7d0edc35607b223dc41d8c8c49e0dfe6b0859aee3a"
     ],
     "checkver": "github",
     "autoupdate": {
         "url": [
-            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/RecMonoLinear/RecMonoLinear-Bold-$version.ttf",
-            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/RecMonoLinear/RecMonoLinear-BoldItalic-$version.ttf",
-            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/RecMonoLinear/RecMonoLinear-Italic-$version.ttf",
-            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/RecMonoLinear/RecMonoLinear-Regular-$version.ttf"
+            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/Linear/RecMonoLinear-Bold-$version.ttf",
+            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/Linear/RecMonoLinear-BoldItalic-$version.ttf",
+            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/Linear/RecMonoLinear-Italic-$version.ttf",
+            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/Linear/RecMonoLinear-Regular-$version.ttf"
         ]
     },
     "installer": {
