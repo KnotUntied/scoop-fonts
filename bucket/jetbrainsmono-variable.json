@@ -1,15 +1,23 @@
 {
-    "version": "2.002",
+    "version": "2.210",
     "license": "OFL-1.1",
     "homepage": "https://www.jetbrains.com/lp/mono/",
-    "url": "https://download.jetbrains.com/fonts/JetBrainsMono-2.002.zip",
-    "hash": "568ff44a4495773c5d204524e1a8442649b4b53b94e21e1a7d784289c2a19a51",
-    "extract_dir": "ttf\\Variable",
+    "url": [
+        "https://github.com/JetBrains/JetBrainsMono/raw/master/fonts/variable/JetBrainsMono%5Bwght%5D.ttf",
+        "https://github.com/JetBrains/JetBrainsMono/raw/master/fonts/variable/JetBrainsMono-Italic%5Bwght%5D.ttf",
+    ],
+    "hash": [
+        "48715a42ec242c21e9f02692891e147d022299a52e48d5e413e1a942193ffeda",
+        "85ae2a5cd3f56baf1ce1c21a851322c58e3d8fbe8e8ad4a4d090a820dd7fe558"
+    ],
     "checkver": {
         "github": "https://github.com/JetBrains/JetBrainsMono"
     },
     "autoupdate": {
-        "url": "https://download.jetbrains.com/fonts/JetBrainsMono-$version.zip"
+        "url": [
+            "https://github.com/JetBrains/JetBrainsMono/raw/master/fonts/variable/JetBrainsMono%5Bwght%5D.ttf",
+            "https://github.com/JetBrains/JetBrainsMono/raw/master/fonts/variable/JetBrainsMono-Italic%5Bwght%5D.ttf",
+        ],
     },
     "installer": {
         "script": [
