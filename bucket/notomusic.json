@@ -1,7 +1,7 @@
 {
     "version": "2.000",
     "license": "OFL-1.1",
-    "homepage": "https://fonts.google.com/specimen/Tinos",
+    "homepage": "https://github.com/googlefonts/noto-fonts",
     "url": "https://github.com/googlefonts/noto-fonts/raw/master/hinted/ttf/NotoMusic/NotoMusic-Regular.ttf",
     "hash": "94f71cebcd6d5b9db80cf1d592cc6386cb0444729acd66dd1ae8f3361abba272",
     "installer": {
