@@ -1,5 +1,5 @@
 {
-    "version": "1.22",
+    "version": "1.23",
     "license": "OFL-1.1",
     "homepage": "https://fonts.google.com/specimen/Cousine",
     "url": [
@@ -9,10 +9,10 @@
         "https://github.com/googlefonts/noto-fonts/raw/master/hinted/Cousine/Cousine-Regular.ttf"
     ],
     "hash": [
-        "cc9745e76a63d8efbdfff37c5682923d6c41ad34395ead3d935a2ef941e77e6b",
-        "962bb1eef7239428b49884a19cdf0b24dfb015fe9b9fe9f3db790abe345a2c2d",
-        "fb45aaaf127ffd7904351d43d7ab18b483818e1f899fd6927d6938fd9b98ed7b",
-        "51d70da771860bf4dfc8ee771929db70b9ade56ea72688e7daad635295f570df"
+        "1f224341677c5ceaa717417d1cb94efbdb276801b3ab1ccea697eb3a8057b6ac",
+        "82755a6d4b12067daabf89eb5bf48d52b9fea4073a59792d331651510a901728",
+        "64e8ed603232b28eceebe0d18838a5e62297605203b33720d775ed628cdc222b",
+        "829e776e4929eb6467838b92c7b700085fac2073801e6b54b224661affb34688"
     ],
     "installer": {
         "script": [
