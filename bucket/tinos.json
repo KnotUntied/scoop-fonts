@@ -1,18 +1,18 @@
 {
-    "version": "1.32",
+    "version": "1.33",
     "license": "OFL-1.1",
     "homepage": "https://fonts.google.com/specimen/Tinos",
     "url": [
-        "https://github.com/googlefonts/noto-fonts/raw/master/hinted/Tinos/Tinos-Bold.ttf",
-        "https://github.com/googlefonts/noto-fonts/raw/master/hinted/Tinos/Tinos-BoldItalic.ttf",
-        "https://github.com/googlefonts/noto-fonts/raw/master/hinted/Tinos/Tinos-Italic.ttf",
-        "https://github.com/googlefonts/noto-fonts/raw/master/hinted/Tinos/Tinos-Regular.ttf"
+        "https://github.com/googlefonts/noto-fonts/raw/master/hinted/ttf/Tinos/Tinos-Bold.ttf",
+        "https://github.com/googlefonts/noto-fonts/raw/master/hinted/ttf/Tinos/Tinos-BoldItalic.ttf",
+        "https://github.com/googlefonts/noto-fonts/raw/master/hinted/ttf/Tinos/Tinos-Italic.ttf",
+        "https://github.com/googlefonts/noto-fonts/raw/master/hinted/ttf/Tinos/Tinos-Regular.ttf"
     ],
     "hash": [
-        "809688da0fe8e163c5c14d5548963dba949d1ca83efb473e8acc296c6fdc6818",
-        "0f2b27ec7378068b673c14f73802dc10f4e842f775f7e5052ad1d37ff1430e3d",
-        "e9037c6b9481541319102b9d57c56f0a37427fa9442e214dc78d720632b0184c",
-        "5921d0285d28a3541784b74bd623f04dab60992fce21cc1039ddc35ad8fff035"
+        "971d6af5fcb3a0c05535a92a635fb63a86ea5eb935639c9b864be33f3bfaba80",
+        "0cd67b90617a03a69a815e758d0649d00f2be48a0cb570615e94e8e5a13aae2e",
+        "0f949a3fa0e23cd0ca94a0c4784bd8f9efb99c20070b9f73b5fd592b49c092ad",
+        "cf264a22292950ca1679b2ade07e9e6ecb26c649ab70975d0e113f979efa827a"
     ],
     "installer": {
         "script": [
