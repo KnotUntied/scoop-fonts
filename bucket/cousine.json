@@ -3,10 +3,10 @@
     "license": "OFL-1.1",
     "homepage": "https://fonts.google.com/specimen/Cousine",
     "url": [
-        "https://github.com/googlefonts/noto-fonts/raw/master/hinted/Cousine/Cousine-Bold.ttf",
-        "https://github.com/googlefonts/noto-fonts/raw/master/hinted/Cousine/Cousine-BoldItalic.ttf",
-        "https://github.com/googlefonts/noto-fonts/raw/master/hinted/Cousine/Cousine-Italic.ttf",
-        "https://github.com/googlefonts/noto-fonts/raw/master/hinted/Cousine/Cousine-Regular.ttf"
+        "https://github.com/googlefonts/noto-fonts/raw/master/hinted/ttf/Cousine/Cousine-Bold.ttf",
+        "https://github.com/googlefonts/noto-fonts/raw/master/hinted/ttf/Cousine/Cousine-BoldItalic.ttf",
+        "https://github.com/googlefonts/noto-fonts/raw/master/hinted/ttf/Cousine/Cousine-Italic.ttf",
+        "https://github.com/googlefonts/noto-fonts/raw/master/hinted/ttf/Cousine/Cousine-Regular.ttf"
     ],
     "hash": [
         "1f224341677c5ceaa717417d1cb94efbdb276801b3ab1ccea697eb3a8057b6ac",
