@@ -1,18 +1,18 @@
 {
-    "version": "1.069",
+    "version": "1.070",
     "license": "OFL-1.1",
     "homepage": "https://github.com/arrowtype/recursive",
     "url": [
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.069/Recursive_Code/Semicasual/RecMonoSemicasual-Bold-1.069.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.069/Recursive_Code/Semicasual/RecMonoSemicasual-BoldItalic-1.069.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.069/Recursive_Code/Semicasual/RecMonoSemicasual-Italic-1.069.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.069/Recursive_Code/Semicasual/RecMonoSemicasual-Regular-1.069.ttf"
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.070/Recursive_Code/Semicasual/RecMonoSemicasual-Bold-1.070.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.070/Recursive_Code/Semicasual/RecMonoSemicasual-BoldItalic-1.070.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.070/Recursive_Code/Semicasual/RecMonoSemicasual-Italic-1.070.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.070/Recursive_Code/Semicasual/RecMonoSemicasual-Regular-1.070.ttf"
     ],
     "hash": [
-        "8aa0b392d49ed60a6478f03a74734a1c1cda0b3dff0180285d749c46379dbde6",
-        "007bc39f4d04870e5b5eaa5c4d60001e42372a646c531d49b145cce61ded6c34",
-        "f98b6a8591c3156cd991883cc48b35de93367fc8262f85b3ad19a663999ea4bf",
-        "9eec91ddadea7bc31980ae1776076c129f2faa384fed89da27e2b0fed24da8e5"
+        "0dbf33bd410d041c0d612d8e0eb2d06b46e9e9747cd246addc3685ccf806d5f5",
+        "d0610518b99442c7210bdf04eca92c7c1a27b1e2e40888f2535d69dbe1edd81b",
+        "b5f5f291b3c1fa3c092cb8b4480a1a1c0d8a805b8aa2327d040d5a51612d1199",
+        "1d8ce4d3663bc7be6e6c070a041d05fd979ea7b8167dba08c3283c1ea3e0bf4a"
     ],
     "checkver": "github",
     "autoupdate": {
