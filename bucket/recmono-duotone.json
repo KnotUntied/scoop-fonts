@@ -1,18 +1,18 @@
 {
-    "version": "1.069",
+    "version": "1.070",
     "license": "OFL-1.1",
     "homepage": "https://github.com/arrowtype/recursive",
     "url": [
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.069/Recursive_Code/Duotone/RecMonoDuotone-Bold-1.069.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.069/Recursive_Code/Duotone/RecMonoDuotone-BoldItalic-1.069.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.069/Recursive_Code/Duotone/RecMonoDuotone-Italic-1.069.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.069/Recursive_Code/Duotone/RecMonoDuotone-Regular-1.069.ttf"
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.070/Recursive_Code/Duotone/RecMonoDuotone-Bold-1.070.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.070/Recursive_Code/Duotone/RecMonoDuotone-BoldItalic-1.070.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.070/Recursive_Code/Duotone/RecMonoDuotone-Italic-1.070.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.070/Recursive_Code/Duotone/RecMonoDuotone-Regular-1.070.ttf"
     ],
     "hash": [
-        "a39e5af8415163d823b3317409970c229fc8b216331f0825d4caadbd7b05aeac",
-        "2027b1c482c2fe2f864e9a48a38ba828dbd4a5dde08c044bbac1d29512581ddc",
-        "484bb946445d64d0af6e70fc3a27d110e77bca90272f7d47d2c48583ba4d3572",
-        "cc04fccc222190e0cfd248be55e68f5d07f79c944fa848ff0add7941021246ef"
+        "003202e209ced60297f51061e97de41854ef383645fdf43b9cc1662416bc20d7",
+        "b80ca115ef4e4060346a44c275d820ac6df095c460b1423bb25b124197003686",
+        "7da9af2ebd33f1cd33ee4d03de31810dd9a52bc6fd4592433c88d4c93f42dfdd",
+        "927efceeff62953ff047f6b9f9b7228a170792af241fa7b2e19a62724baf040b"
     ],
     "checkver": "github",
     "autoupdate": {
