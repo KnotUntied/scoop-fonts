@@ -1,9 +1,9 @@
 {
-    "version": "35",
+    "version": "36",
     "license": "MIT",
     "homepage": "https://github.com/blobject/agave",
-    "url": "https://github.com/blobject/agave/releases/download/v35/Agave-Regular.ttf",
-    "hash": "d5c9d6f64e0d214aa0a437eb0c852339b3fe3aea3a18d049f37d79203cb2273d",
+    "url": "https://github.com/blobject/agave/releases/download/v36/Agave-Regular.ttf",
+    "hash": "08009e590cbd0d3284433ba673c9490409ade0fde8c3e94e98942764c58d9a6a",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/blobject/agave/releases/download/v$version/Agave-Regular.ttf"
