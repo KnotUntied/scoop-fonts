@@ -1,10 +1,9 @@
 {
-    "version": "2.032R-ro",
+    "version": "2.038R-ro",
     "license": "OFL-1.1",
     "homepage": "https://github.com/adobe-fonts/source-code-pro",
-    "url": "https://github.com/adobe-fonts/source-code-pro/releases/download/2.032R-ro%2F1.052R-it%2F1.012R-VAR/VAR-source-code-var-1.012.zip",
-    "hash": "b343e4990ece789f9fa5c55fdb7552f00d41667921286dddc60a72e9b9793ec8",
-    "extract_dir": "VAR",
+    "url": "https://github.com/adobe-fonts/source-code-pro/releases/download/2.038R-ro%2F1.058R-it%2F1.018R-VAR/VAR-source-code-var-1.018R.zip",
+    "hash": "d27e01e3bf0be3fd86983805b6be1d8486d7a442efe451c23f5b6fe95e241f04",
     "installer": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
