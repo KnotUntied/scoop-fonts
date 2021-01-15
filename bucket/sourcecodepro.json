@@ -1,10 +1,9 @@
 {
-    "version": "2.032R-ro",
+    "version": "2.038R-ro",
     "license": "OFL-1.1",
     "homepage": "https://github.com/adobe-fonts/source-code-pro",
-    "url": "https://github.com/adobe-fonts/source-code-pro/releases/download/2.032R-ro%2F1.052R-it%2F1.012R-VAR/TTF-source-code-pro-2.032R-ro-1.052R-it.zip",
-    "hash": "026d7644bed97a7934caa63eacd9fd83beeacfd301d9d29fcc899f32d4004a12",
-    "extract_dir": "TTF",
+    "url": "https://github.com/adobe-fonts/source-code-pro/releases/download/2.038R-ro%2F1.058R-it%2F1.018R-VAR/TTF-source-code-pro-2.038R-ro-1.058R-it.zip",
+    "hash": "5d53213eb7a4e1749daef33749fef8301bda4d302059054e2bbe88a9906d0a16",
     "installer": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
