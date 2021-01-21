@@ -1,26 +1,26 @@
 {
-    "version": "1.070",
+    "version": "1.071",
     "license": "OFL-1.1",
     "homepage": "https://github.com/arrowtype/recursive",
     "url": [
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.070/Recursive_Code/Casual/RecMonoCasual-Bold-1.070.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.070/Recursive_Code/Casual/RecMonoCasual-BoldItalic-1.070.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.070/Recursive_Code/Casual/RecMonoCasual-Italic-1.070.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.070/Recursive_Code/Casual/RecMonoCasual-Regular-1.070.ttf"
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.071/Recursive_Code/RecMonoCasual/RecMonoCasual-Bold-1.071.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.071/Recursive_Code/RecMonoCasual/RecMonoCasual-BoldItalic-1.071.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.071/Recursive_Code/RecMonoCasual/RecMonoCasual-Italic-1.071.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.071/Recursive_Code/RecMonoCasual/RecMonoCasual-Regular-1.071.ttf"
     ],
     "hash": [
-        "6c228f2460586d3593ddd5ac86263dce5969b67a850c5c63d8d9676814d3502b",
-        "e255b57aef51bf47f8fa2b1f3adf28f559f5af95881ce520bdfcc3e16f3996cb",
-        "ca492673cba54d08822824a0ba78c31c25f171d4f5c35c53bb5d2bac077e06ac",
-        "0f717b12fa6c57f6133419cd9d3bd6ce3ca760e6cae7dd4067205897cbe18349"
+        "555ff2867acec59e611e7cef70da5680b22a5303a9ecd091523499d168334d96",
+        "e7003b1e91fcf23d04b9dad3bd4fcca4bb71b7e43d819637e652dec59b4157da",
+        "e7556dc680dda9d065ae44e4c70d442f17737bd7c4e212f952106e37da630cae",
+        "bee3f04c806c508130c4067981d09a4324a33a088248959310ecd50e0091204f"
     ],
     "checkver": "github",
     "autoupdate": {
         "url": [
-            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/Casual/RecMonoCasual-Bold-$version.ttf",
-            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/Casual/RecMonoCasual-BoldItalic-$version.ttf",
-            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/Casual/RecMonoCasual-Italic-$version.ttf",
-            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/Casual/RecMonoCasual-Regular-$version.ttf"
+            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/RecMonoCasual/RecMonoCasual-Bold-$version.ttf",
+            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/RecMonoCasual/RecMonoCasual-BoldItalic-$version.ttf",
+            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/RecMonoCasual/RecMonoCasual-Italic-$version.ttf",
+            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/RecMonoCasual/RecMonoCasual-Regular-$version.ttf"
         ]
     },
     "installer": {
@@ -39,7 +39,7 @@
             "  Remove-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
             "  Remove-Item \"$env:windir\\Fonts\\$($_.Name)\" -Force -ErrorAction SilentlyContinue",
             "}",
-            "Write-Host \"'Rec Mono Casual' TTF files have been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
+            "Write-Host \"'Rec Mono Casual' has been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
         ]
     }
 }
