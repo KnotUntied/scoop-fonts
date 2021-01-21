@@ -1,26 +1,26 @@
 {
-    "version": "1.070",
+    "version": "1.071",
     "license": "OFL-1.1",
     "homepage": "https://github.com/arrowtype/recursive",
     "url": [
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.070/Recursive_Code/Semicasual/RecMonoSemicasual-Bold-1.070.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.070/Recursive_Code/Semicasual/RecMonoSemicasual-BoldItalic-1.070.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.070/Recursive_Code/Semicasual/RecMonoSemicasual-Italic-1.070.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.070/Recursive_Code/Semicasual/RecMonoSemicasual-Regular-1.070.ttf"
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.071/Recursive_Code/RecMonoSemicasual/RecMonoSemicasual-Bold-1.071.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.071/Recursive_Code/RecMonoSemicasual/RecMonoSemicasual-BoldItalic-1.071.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.071/Recursive_Code/RecMonoSemicasual/RecMonoSemicasual-Italic-1.071.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.071/Recursive_Code/RecMonoSemicasual/RecMonoSemicasual-Regular-1.071.ttf"
     ],
     "hash": [
-        "0dbf33bd410d041c0d612d8e0eb2d06b46e9e9747cd246addc3685ccf806d5f5",
-        "d0610518b99442c7210bdf04eca92c7c1a27b1e2e40888f2535d69dbe1edd81b",
-        "b5f5f291b3c1fa3c092cb8b4480a1a1c0d8a805b8aa2327d040d5a51612d1199",
-        "1d8ce4d3663bc7be6e6c070a041d05fd979ea7b8167dba08c3283c1ea3e0bf4a"
+        "03a206b45be620752bb4692ab1d1bd7d0ffa38507ac55c38f7ecfa7a355d8e64",
+        "fda78c95e3c87b3197fb6b3a2a8b7cae31eda8e0ef4ee78d21aecd24df1df39f",
+        "28b8f118b8b0bf67c1e657b382a419842d822fc3a71b1eed0df655263e5b9cac",
+        "acb59e12d8fe88c8682a1a7f1cfff98d80318f7f765f7a9c4acbbe11725be241"
     ],
     "checkver": "github",
     "autoupdate": {
         "url": [
-            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/Semicasual/RecMonoSemicasual-Bold-$version.ttf",
-            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/Semicasual/RecMonoSemicasual-BoldItalic-$version.ttf",
-            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/Semicasual/RecMonoSemicasual-Italic-$version.ttf",
-            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/Semicasual/RecMonoSemicasual-Regular-$version.ttf"
+            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/RecMonoSemicasual/RecMonoSemicasual-Bold-$version.ttf",
+            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/RecMonoSemicasual/RecMonoSemicasual-BoldItalic-$version.ttf",
+            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/RecMonoSemicasual/RecMonoSemicasual-Italic-$version.ttf",
+            "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-$version/Recursive_Code/RecMonoSemicasual/RecMonoSemicasual-Regular-$version.ttf"
         ]
     },
     "installer": {
@@ -39,7 +39,7 @@
             "  Remove-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
             "  Remove-Item \"$env:windir\\Fonts\\$($_.Name)\" -Force -ErrorAction SilentlyContinue",
             "}",
-            "Write-Host \"'Rec Mono Semicasual' TTF files have been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
+            "Write-Host \"'Rec Mono Semicasual' has been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
         ]
     }
 }
