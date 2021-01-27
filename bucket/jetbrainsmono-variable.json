@@ -1,5 +1,5 @@
 {
-    "version": "2.221",
+    "version": "2.225",
     "license": "OFL-1.1",
     "homepage": "https://www.jetbrains.com/lp/mono/",
     "url": [
@@ -7,18 +7,9 @@
         "https://github.com/JetBrains/JetBrainsMono/raw/master/fonts/variable/JetBrainsMono-Italic%5Bwght%5D.ttf"
     ],
     "hash": [
-        "a076f060e50802245c49f28e8ea210dbee78d165f9810c29fa93349f05731fbb",
-        "9e6b42f6b8f290fbb1cdb37c755951f9768fe3ec46a568a172929c10c8aac9da"
+        "a780217b49af28a262185369267188d22088b0a29a1c1dc212eee3811e1a55f2",
+        "55dc8bf9f4ad3b1aff131c07a184c60f68683a49335d28f8b949e79b06c23913"
     ],
-    "checkver": {
-        "github": "https://github.com/JetBrains/JetBrainsMono"
-    },
-    "autoupdate": {
-        "url": [
-            "https://github.com/JetBrains/JetBrainsMono/raw/master/fonts/variable/JetBrainsMono%5Bwght%5D.ttf",
-            "https://github.com/JetBrains/JetBrainsMono/raw/master/fonts/variable/JetBrainsMono-Italic%5Bwght%5D.ttf",
-        ],
-    },
     "installer": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
@@ -38,5 +29,14 @@
             "}",
             "Write-Host \"'JetBrains Mono' variable TTF files have been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
         ]
+    },
+    "checkver": {
+        "github": "https://github.com/JetBrains/JetBrainsMono"
+    },
+    "autoupdate": {
+        "url": [
+            "https://github.com/JetBrains/JetBrainsMono/raw/master/fonts/variable/JetBrainsMono%5Bwght%5D.ttf",
+            "https://github.com/JetBrains/JetBrainsMono/raw/master/fonts/variable/JetBrainsMono-Italic%5Bwght%5D.ttf",
+        ],
     }
 }
