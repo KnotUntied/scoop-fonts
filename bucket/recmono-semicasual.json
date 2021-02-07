@@ -1,18 +1,18 @@
 {
-    "version": "1.072",
+    "version": "1.073",
     "license": "OFL-1.1",
     "homepage": "https://github.com/arrowtype/recursive",
     "url": [
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.072/Recursive_Code/RecMonoSemicasual/RecMonoSemicasual-Bold-1.072.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.072/Recursive_Code/RecMonoSemicasual/RecMonoSemicasual-BoldItalic-1.072.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.072/Recursive_Code/RecMonoSemicasual/RecMonoSemicasual-Italic-1.072.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.072/Recursive_Code/RecMonoSemicasual/RecMonoSemicasual-Regular-1.072.ttf"
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.073/Recursive_Code/RecMonoSemicasual/RecMonoSemicasual-Bold-1.073.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.073/Recursive_Code/RecMonoSemicasual/RecMonoSemicasual-BoldItalic-1.073.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.073/Recursive_Code/RecMonoSemicasual/RecMonoSemicasual-Italic-1.073.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.073/Recursive_Code/RecMonoSemicasual/RecMonoSemicasual-Regular-1.073.ttf"
     ],
     "hash": [
-        "7c259d6f112535b0430c0ba1f3a9cf24e2c744dbebd800df7fd5a0fc8ecf5fda",
-        "b7cd5b0965beb298d6ba4518fad5c62614f2bc3e60b4d03a9e6f6784f5282b2b",
-        "66c10c0860dabb69fd1e48de639a0294f21171d1c9fb5c5ea719032ecf3374e8",
-        "b3a1bde6c228e2212a72c337ac49abecd9e36c0ef69a650fdf228725d98be501"
+        "f3ab03276d4488aec4b4e2eb82d1478e38b8283bb3d4ab80ba8fc3b0669e1ee1",
+        "a3051a6388b876900b4b2fec9850d947aa5e39537969c2b5f4f6581fa7adb394",
+        "ea93c6e3d96f881d9c5fb629aa2da95d75cc86fac092eb504d4fb1bd83124bc5",
+        "4ab45942a185b3b9e733543176ba60349c6cfcd2cb3e4f6c9656c701ad4b10c4"
     ],
     "checkver": "github",
     "autoupdate": {
