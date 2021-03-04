@@ -1,0 +1,46 @@
+{
+    "version": "2.001",
+    "license": "OFL-1.1",
+    "homepage": "https://github.com/tonsky/font-writer",
+    "url": [
+        "https://github.com/tonsky/font-writer/raw/master/ttf/Writer-Bold.ttf",
+        "https://github.com/tonsky/font-writer/raw/master/ttf/Writer-BoldItalic.ttf",
+        "https://github.com/tonsky/font-writer/raw/master/ttf/Writer-Italic.ttf",
+        "https://github.com/tonsky/font-writer/raw/master/ttf/Writer-Medium.ttf",
+        "https://github.com/tonsky/font-writer/raw/master/ttf/Writer-MediumItalic.ttf",
+        "https://github.com/tonsky/font-writer/raw/master/ttf/Writer-Regular.ttf",
+        "https://github.com/tonsky/font-writer/raw/master/ttf/Writer-SemiBold.ttf",
+        "https://github.com/tonsky/font-writer/raw/master/ttf/Writer-SemiBoldItalic.ttf",
+        "https://github.com/tonsky/font-writer/raw/master/LICENSE.txt"
+    ],
+    "hash": [
+        "c026fdf624b1a50be4c7dc3bd5a59b52a2287c6ac34fd45067845ae72ce7a514",
+        "6d1870c63c8bab621b571de9a8066e6c1d33911a9b33d89480916414a7d0fb7c",
+        "b36d88fe20908491af3eb418b958213b60db2c8b3c477ce1150f22bf25b8ff3b",
+        "831e595bfd6098345e79ee29105f9b368dc9edf90a6b1ba2e5caaac64c00d74c",
+        "320875ccd7cdeadbf58305b8fec1c88f77a95d37b280814c109f7d60984feb1f",
+        "3420272f899a0d3d4b8952579925b0b4cdd29e4df694a69a8e4e00ffdbf072fa",
+        "d898aaab76281dc3a7b43eabed86a17b37d08741069d408aacf51a9dc0215377",
+        "e10b82bc6234da69a490d523b42620842ec6a66e93e4470f9b46d4c704f95a5f",
+        "c81f4351d77f338ecf669ce2b9869627bb3f145f87ca705354d162b0cae42ece"
+    ],
+    "installer": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
+            "Get-ChildItem $dir -Filter '*.ttf' -Recurse | ForEach-Object {",
+            "  New-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value $_.Name -Force | Out-Null",
+            "  Copy-Item $_.FullName -destination \"$env:windir\\Fonts\"",
+            "}"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
+            "Get-ChildItem $dir -filter '*.ttf' -Recurse | ForEach-Object {",
+            "  Remove-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
+            "  Remove-Item \"$env:windir\\Fonts\\$($_.Name)\" -Force -ErrorAction SilentlyContinue",
+            "}",
+            "Write-Host \"'Writer' TTF files have been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
+        ]
+    }
+}
