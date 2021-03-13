@@ -1,18 +1,18 @@
 {
-    "version": "1.074",
+    "version": "1.075",
     "license": "OFL-1.1",
     "homepage": "https://github.com/arrowtype/recursive",
     "url": [
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.074/Recursive_Code/RecMonoLinear/RecMonoLinear-Bold-1.074.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.074/Recursive_Code/RecMonoLinear/RecMonoLinear-BoldItalic-1.074.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.074/Recursive_Code/RecMonoLinear/RecMonoLinear-Italic-1.074.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.074/Recursive_Code/RecMonoLinear/RecMonoLinear-Regular-1.074.ttf"
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.075/Recursive_Code/RecMonoLinear/RecMonoLinear-Bold-1.075.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.075/Recursive_Code/RecMonoLinear/RecMonoLinear-BoldItalic-1.075.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.075/Recursive_Code/RecMonoLinear/RecMonoLinear-Italic-1.075.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.075/Recursive_Code/RecMonoLinear/RecMonoLinear-Regular-1.075.ttf"
     ],
     "hash": [
-        "aa9b9532cc9932cd1605b57e06021ccc4ea7b53409ceed1f805c46ae40acd1f6",
-        "e65d288a5ae37da3b39f719edac3ad955e52e22bc74718bd5a06f59129399a24",
-        "ccd54054a06fddca840c4f5b9d6314056839d36195ff38fcdd025f46e6fd20d4",
-        "e833e567349121beba91e50f83f17916c446479ed6d1f79ee691b1b50626d1e5"
+        "702b21275c03bdf51d3408db27e3e74cc1a1fbca3fb30bc29bf0604341338a5c",
+        "b58a17bc6f9d17d23654e4f935112f85fb7de9706cdb03a417ce91e002edf2be",
+        "924b1cfb8d24c1978350401be0fd64a00124c89af229dbae55a0023bf85675e7",
+        "ffe73cba267dd9dfbc74281540956ed0fc83f60ebbc1e5ac27d6181a30737a32"
     ],
     "checkver": "github",
     "autoupdate": {
