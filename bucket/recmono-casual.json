@@ -1,18 +1,18 @@
 {
-    "version": "1.075",
+    "version": "1.077",
     "license": "OFL-1.1",
     "homepage": "https://github.com/arrowtype/recursive",
     "url": [
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.075/Recursive_Code/RecMonoCasual/RecMonoCasual-Bold-1.075.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.075/Recursive_Code/RecMonoCasual/RecMonoCasual-BoldItalic-1.075.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.075/Recursive_Code/RecMonoCasual/RecMonoCasual-Italic-1.075.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.075/Recursive_Code/RecMonoCasual/RecMonoCasual-Regular-1.075.ttf"
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.077/Recursive_Code/RecMonoCasual/RecMonoCasual-Bold-1.077.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.077/Recursive_Code/RecMonoCasual/RecMonoCasual-Bold-1.077.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.077/Recursive_Code/RecMonoCasual/RecMonoCasual-Bold-1.077.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.077/Recursive_Code/RecMonoCasual/RecMonoCasual-Bold-1.077.ttf"
     ],
     "hash": [
-        "5555b10437f2e07dc57bf4f538a821c2686def1e5a6506c6af9f52423a22db45",
-        "4d4e2c25b85d052c122221086b03dedd3b73dae42e931a87e00e9cf813d48ec9",
-        "eefebeb180f214b904013e0f7eee49666780c856162979a45a65063235fe7a24",
-        "ae0039424485af3aa9c158a56275fe541048d1477f8ae137195fc0ee9d7ea6e3"
+        "bb27a63325c131f1b645d5c7efa321450e6a4242cbb691864f0ec3126e7c984b",
+        "9b710adf8a7a6e1979a739fe5185656bbd375e9691df6d114b023252aca9c6af",
+        "f32e7f8b94b6c31dff728376f424fa9f07f9c4ddfec6cc2be5b8e30d49ed33be",
+        "e5187298c1b6e99223946a38bc1abc27da68874e83671876fdad7bd3bce87cad"
     ],
     "checkver": "github",
     "autoupdate": {
