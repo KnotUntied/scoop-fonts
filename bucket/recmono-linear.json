@@ -1,18 +1,18 @@
 {
-    "version": "1.077",
+    "version": "1.078",
     "license": "OFL-1.1",
     "homepage": "https://github.com/arrowtype/recursive",
     "url": [
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.077/Recursive_Code/RecMonoCasual/RecMonoCasual-Bold-1.077.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.077/Recursive_Code/RecMonoCasual/RecMonoCasual-Bold-1.077.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.077/Recursive_Code/RecMonoCasual/RecMonoCasual-Bold-1.077.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.077/Recursive_Code/RecMonoCasual/RecMonoCasual-Bold-1.077.ttf"
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.078/Recursive_Code/RecMonoCasual/RecMonoCasual-Bold-1.078.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.078/Recursive_Code/RecMonoCasual/RecMonoCasual-Bold-1.078.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.078/Recursive_Code/RecMonoCasual/RecMonoCasual-Bold-1.078.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.078/Recursive_Code/RecMonoCasual/RecMonoCasual-Bold-1.078.ttf"
     ],
     "hash": [
-        "4f7d641fdecdb436e194a86bed356d058719c5dcf5c484ff63b9f535510b0412",
-        "3723bb7c024cc65e79c5caad5a293a73ceddb122b3594a6338662ff6be831358",
-        "a803da4a0dace0d65396891a3833fc3216732d258b932769d4cba5c8e5fc7e21",
-        "b817e89be45b8629a6703ea4f0f15dcb1dd4b6ba8945bd038e579b8d97795348"
+        "5e7cb4b0fb48b7319ea2499086f200f13efa87b21172884483370cd3ad869835",
+        "cae12618f988011851c83fc2c1cf4ad2d7dc515098cf9229de6113b297243bb0",
+        "cc2b35034220fe49c8ca537cdfce31cf723a88f5e1731668fc63eeb24f3bb50b",
+        "b0397a6f38a69258f08a70ed4176daabddc67c71964c56914601d1c74d346acc"
     ],
     "checkver": "github",
     "autoupdate": {
