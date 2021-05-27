@@ -1,0 +1,32 @@
+{
+    "version": "1.078",
+    "license": "OFL-1.1",
+    "homepage": "https://github.com/arrowtype/recursive",
+    "url": "https://github.com/arrowtype/recursive/releases/download/v1.078/ArrowType-Recursive-1.078.zip",
+    "hash": "2571694c0ebfef1b89604b9f66db80961941048b1ca5a0015c2be7401c67c556",
+    "extract_dir": "ArrowType-Recursive-1.078\\Recursive_Desktop",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/arrowtype/recursive/releases/download/v$version/ArrowType-Recursive-$version.zip",
+        "extract_dir": "ArrowType-Recursive-$version\\Recursive_Desktop"
+    },
+    "installer": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
+            "Get-ChildItem $dir -Filter '*.ttf' -Recurse | ForEach-Object {",
+            "  New-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value $_.Name -Force | Out-Null",
+            "  Copy-Item $_.FullName -destination \"$env:windir\\Fonts\"",
+            "}"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
+            "Get-ChildItem $dir -filter '*.ttf' -Recurse | ForEach-Object {",
+            "  Remove-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
+            "  Remove-Item \"$env:windir\\Fonts\\$($_.Name)\" -Force -ErrorAction SilentlyContinue",
+            "}",
+            "Write-Host \"'Rec Mono' TTF files have been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
+        ]
+    }
+}
