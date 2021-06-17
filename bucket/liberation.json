@@ -5,7 +5,14 @@
     "url": "https://github.com/liberationfonts/liberation-fonts/files/6026893/liberation-fonts-ttf-2.1.3.tar.gz",
     "hash": "8947bb7c0ad4d0d25b6ae93d40ec5fbe3dbbd4de21b81a62aa0c41a801e36fdd",
     "extract_dir": "liberation-fonts-ttf-2.1.3",
-    "checkver": "github",
+    "checkver": {
+        "github": "https://github.com/liberationfonts/liberation-fonts",
+        "re": ".*\/liberation-fonts\/files\/(?<fileno>[\\d]+)\/liberation-fonts-ttf-(?<version>[\\d.]+).tar.gz"
+    },
+    "autoupdate": {
+        "url": "https://github.com/liberationfonts/liberation-fonts/files/$fileno/liberation-fonts-ttf-$version.tar.gz",
+        "extract_dir": "liberation-fonts-ttf-$version"
+    },
     "installer": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop install $app'\"; exit 1 }",
@@ -22,7 +29,7 @@
             "    Remove-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
             "    Remove-Item \"$env:windir\\Fonts\\$($_.Name)\" -Force -ErrorAction SilentlyContinue",
             "}",
-            "Write-Host \"'Liberation Mono' has been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
+            "Write-Host \"'Liberation' fonts have been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
         ]
     }
 }
