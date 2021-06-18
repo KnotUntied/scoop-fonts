@@ -10,7 +10,7 @@
         "re": ".*\/liberation-fonts\/files\/(?<fileno>[\\d]+)\/liberation-fonts-ttf-(?<version>[\\d.]+).tar.gz"
     },
     "autoupdate": {
-        "url": "https://github.com/liberationfonts/liberation-fonts/files/$fileno/liberation-fonts-ttf-$version.tar.gz",
+        "url": "https://github.com/liberationfonts/liberation-fonts/files/$matchFileno/liberation-fonts-ttf-$version.tar.gz",
         "extract_dir": "liberation-fonts-ttf-$version"
     },
     "installer": {
