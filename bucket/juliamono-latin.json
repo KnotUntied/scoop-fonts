@@ -1,9 +1,9 @@
 {
-    "version": "0.039",
+    "version": "0.040",
     "license": "OFL-1.1",
     "homepage": "https://github.com/cormullion/juliamono",
-    "url": "https://github.com/cormullion/juliamono/releases/download/v0.039/JuliaMono.zip",
-    "hash": "43d4dec6786ca7f5fc4a8d959e1246794df2a51e5419caf1e9205c1872bde58f",
+    "url": "https://github.com/cormullion/juliamono/releases/download/v0.040/JuliaMono.zip",
+    "hash": "a87e401594bb5841191f19bffe446e8b51ce26fc8cb69f3a8d11276effb997db",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/cormullion/juliamono/releases/download/v$version/JuliaMono.zip"
