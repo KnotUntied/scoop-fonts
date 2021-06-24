@@ -1,9 +1,9 @@
 {
-    "version": "0.55.1",
+    "version": "0.55.2",
     "license": "OFL-1.1",
     "homepage": "https://www.kutilek.de/sudo-font/",
-    "url": "https://github.com/jenskutilek/sudo-font/releases/download/v0.55.1/sudo.zip",
-    "hash": "d5731dfca95b451a66703d7f6f079d6e72728611637793f6a25c1702cef420f3",
+    "url": "https://github.com/jenskutilek/sudo-font/releases/download/v0.55.2/sudo.zip",
+    "hash": "fd39608d0a531b68777c68c5ab31f873a6803191a210be102d3d4cc1d66cce59",
     "extract_dir": "sudo",
     "checkver": {
         "github": "https://github.com/jenskutilek/sudo-font"
