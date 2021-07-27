@@ -1,5 +1,5 @@
 {
-    "version": "2.225",
+    "version": "2.241",
     "license": "OFL-1.1",
     "homepage": "https://www.jetbrains.com/lp/mono/",
     "url": [
@@ -7,8 +7,8 @@
         "https://github.com/JetBrains/JetBrainsMono/raw/master/fonts/variable/JetBrainsMono-Italic%5Bwght%5D.ttf"
     ],
     "hash": [
-        "a780217b49af28a262185369267188d22088b0a29a1c1dc212eee3811e1a55f2",
-        "55dc8bf9f4ad3b1aff131c07a184c60f68683a49335d28f8b949e79b06c23913"
+        "0a6725a62a96f0f6da3d04902746e425e4c7c009a13e3913923908adf7c5589a",
+        "8518121a4e7b7b1e3b091f8f7ce8ce5287a5c421073bed589efe13cfb93ded11"
     ],
     "installer": {
         "script": [
