@@ -1,9 +1,9 @@
 {
-    "version": "9.0.0",
+    "version": "9.0.1",
     "license": "OFL-1.1",
     "homepage": "https://github.com/be5invis/Iosevka",
-    "url": "https://github.com/be5invis/Iosevka/releases/download/v9.0.0/super-ttc-iosevka-ss16-9.0.0.zip",
-    "hash": "b66179dfa17d5e6c9a734b84e291d083ea1925f2f205de0ee08f30e51f6e25b7",
+    "url": "https://github.com/be5invis/Iosevka/releases/download/v9.0.1/super-ttc-iosevka-ss16-9.0.1.zip",
+    "hash": "86712dc1b40879e1b76a02a657774843726f08f23a27f886fa96993acd762713",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/be5invis/Iosevka/releases/download/v$version/super-ttc-iosevka-ss16-$version.zip"
