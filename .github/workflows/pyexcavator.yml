@@ -1,4 +1,6 @@
-on: workflow_dispatch
+on:
+  schedule:
+  - cron: '0 * * * *'
 name: PyExcavator
 jobs:
   excavate:
