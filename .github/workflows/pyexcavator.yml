@@ -1,0 +1,17 @@
+on:
+  schedule:
+  - cron: '0 * * * *'
+name: PyExcavator
+jobs:
+  excavate:
+    name: PyExcavator
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: PyExcavate
+      run: python updater.py
+    - name: Push changes
+      uses: ad-m/github-push-action@v0.6.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: master
