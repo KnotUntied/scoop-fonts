@@ -50,4 +50,5 @@ for font in fonts:
                 json.dump(json_object, f, indent=4)
                 f.write("\n")
 
+            subprocess.check_call(["hub", "add", f"bucket/{font}.json"])
             subprocess.check_call(["hub", "commit", "-m", f"{font}: Update to version {latest_version}"])
