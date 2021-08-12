@@ -7,7 +7,10 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: PyExcavate
-      run: python updater.py
+      run: |
+        git config --local user.email "20182921+KnotUntied@users.noreply.github.com"
+        git config --local user.name "KnotUntied"
+        python updater.py
     - name: Push changes
       uses: ad-m/github-push-action@v0.6.0
       with:
