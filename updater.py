@@ -27,14 +27,15 @@ for font in fonts:
             checkver = f.read().decode('utf-8')
 
         checkver_version = github_re.search(checkver)
-        if (checkver_version and checkver_version.group(1)):
+        if checkver_version and checkver_version.group(1):
             latest_version = checkver_version.group(1)
 
-        if (latest_version != json_object["version"]):
+        if latest_version != json_object["version"]:
             hashes = []
 
             for i, url in enumerate(json_object["url"]):
-                url = autoupdate_re.sub(latest_version, json_object["autoupdate"]["url"][i])
+                if "autoupdate" in json_object:
+                    url = autoupdate_re.sub(latest_version, json_object["autoupdate"]["url"][i])
 
                 with urllib.request.urlopen(f"{url}") as f:
                     sha256_hash = hashlib.sha256()
