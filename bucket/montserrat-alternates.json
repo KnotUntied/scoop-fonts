@@ -45,6 +45,29 @@
         "41f82bb4d24b304f30f7136bc47abdd083782e4265c984160f5649d1e78ea49c"
     ],
     "checkver": "github",
+    "autoupdate": {
+        "url": [
+            "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-Black.ttf",
+            "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-BlackItalic.ttf",
+            "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-Bold.ttf",
+            "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-BoldItalic.ttf",
+            "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-ExtraBold.ttf",
+            "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-ExtraBoldItalic.ttf",
+            "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-ExtraLight.ttf",
+            "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-ExtraLightItalic.ttf",
+            "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-Italic.ttf",
+            "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-Light.ttf",
+            "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-LightItalic.ttf",
+            "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-Medium.ttf",
+            "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-MediumItalic.ttf",
+            "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-Regular.ttf",
+            "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-SemiBold.ttf",
+            "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-SemiBoldItalic.ttf",
+            "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-Thin.ttf",
+            "https://github.com/JulietaUla/Montserrat/raw/master/fonts/ttf/MontserratAlternates-ThinItalic.ttf",
+            "https://raw.githubusercontent.com/JulietaUla/Montserrat/master/OFL.txt"
+        ]
+    },
     "installer": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",

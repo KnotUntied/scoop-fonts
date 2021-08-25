@@ -8,6 +8,8 @@ fonts = [
     "ibmplexmono",
     "ibmplexsans",
     "ibmplexserif",
+    "montserrat",
+    "montserrat-alternates",
     "recmono-casual",
     "recmono-duotone",
     "recmono-linear",
