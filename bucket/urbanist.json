@@ -43,6 +43,28 @@
         "08ae234d96652a4befd4dea18538ea71a53211823932a4f554dc338174e9e285"
     ],
     "checkver": "github",
+    "autoupdate": {
+        "url": [
+            "https://github.com/coreyhu/Urbanist/raw/master/fonts/ttf/Urbanist-Black.ttf",
+            "https://github.com/coreyhu/Urbanist/raw/master/fonts/ttf/Urbanist-BlackItalic.ttf",
+            "https://github.com/coreyhu/Urbanist/raw/master/fonts/ttf/Urbanist-Bold.ttf",
+            "https://github.com/coreyhu/Urbanist/raw/master/fonts/ttf/Urbanist-BoldItalic.ttf",
+            "https://github.com/coreyhu/Urbanist/raw/master/fonts/ttf/Urbanist-ExtraBold.ttf",
+            "https://github.com/coreyhu/Urbanist/raw/master/fonts/ttf/Urbanist-ExtraBoldItalic.ttf",
+            "https://github.com/coreyhu/Urbanist/raw/master/fonts/ttf/Urbanist-ExtraLight.ttf",
+            "https://github.com/coreyhu/Urbanist/raw/master/fonts/ttf/Urbanist-ExtraLightItalic.ttf",
+            "https://github.com/coreyhu/Urbanist/raw/master/fonts/ttf/Urbanist-Italic.ttf",
+            "https://github.com/coreyhu/Urbanist/raw/master/fonts/ttf/Urbanist-Light.ttf",
+            "https://github.com/coreyhu/Urbanist/raw/master/fonts/ttf/Urbanist-LightItalic.ttf",
+            "https://github.com/coreyhu/Urbanist/raw/master/fonts/ttf/Urbanist-Medium.ttf",
+            "https://github.com/coreyhu/Urbanist/raw/master/fonts/ttf/Urbanist-MediumItalic.ttf",
+            "https://github.com/coreyhu/Urbanist/raw/master/fonts/ttf/Urbanist-Regular.ttf",
+            "https://github.com/coreyhu/Urbanist/raw/master/fonts/ttf/Urbanist-SemiBold.ttf",
+            "https://github.com/coreyhu/Urbanist/raw/master/fonts/ttf/Urbanist-SemiBoldItalic.ttf",
+            "https://github.com/coreyhu/Urbanist/raw/master/fonts/ttf/Urbanist-Thin.ttf",
+            "https://github.com/coreyhu/Urbanist/raw/master/fonts/ttf/Urbanist-ThinItalic.ttf"
+        ]
+    },
     "installer": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",

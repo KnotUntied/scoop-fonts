@@ -11,7 +11,8 @@ fonts = [
     "recmono-casual",
     "recmono-duotone",
     "recmono-linear",
-    "recmono-semicasual"
+    "recmono-semicasual",
+    "urbanist"
 ]
 
 autoupdate_re = re.compile("\$version")
