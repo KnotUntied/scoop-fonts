@@ -1,9 +1,9 @@
 {
-    "version": "1.250",
+    "version": "1.251",
     "license": "OFL-1.1",
     "homepage": "https://github.com/coreyhu/Urbanist",
     "url": "https://github.com/coreyhu/Urbanist/raw/master/fonts/variable/Urbanist%5Bital%2Cwght%5D.ttf",
-    "hash": "acad6de1fc93436f5c0f1f4137751ef04f1aea3063e7036535970ffcfbd79f72",
+    "hash": "4466ccda129345661fc750f967671d42ef177a3ea5e51e0fac8edc6a374ad48c",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/coreyhu/Urbanist/raw/master/fonts/variable/Urbanist%5Bital%2Cwght%5D.ttf"
