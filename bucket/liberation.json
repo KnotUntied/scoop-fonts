@@ -1,10 +1,10 @@
 {
-    "version": "2.1.4",
+    "version": "2.1.5",
     "license": "OFL-1.1",
     "homepage": "https://github.com/liberationfonts/liberation-fonts",
-    "url": "https://github.com/liberationfonts/liberation-fonts/files/6418984/liberation-fonts-ttf-2.1.4.tar.gz",
-    "hash": "26f85412dd0aa9d061504a1cc8aaf0aa12a70710e8d47d8b65a1251757c1a5ef",
-    "extract_dir": "liberation-fonts-ttf-2.1.4",
+    "url": "https://github.com/liberationfonts/liberation-fonts/files/7261482/liberation-fonts-ttf-2.1.5.tar.gz",
+    "hash": "7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0",
+    "extract_dir": "liberation-fonts-ttf-2.1.5",
     "checkver": {
         "github": "https://github.com/liberationfonts/liberation-fonts",
         "re": ".*/liberation-fonts/files/(?<fileno>[\\d]+)/liberation-fonts-ttf-(?<version>[\\d.]+).tar.gz"
