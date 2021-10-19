@@ -1,5 +1,5 @@
 {
-    "version": "1.079",
+    "version": "1.081",
     "license": "OFL-1.1",
     "homepage": "https://github.com/arrowtype/recursive",
     "url": [
@@ -9,10 +9,10 @@
         "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.078/Recursive_Code/RecMonoCasual/RecMonoCasual-Bold-1.078.ttf"
     ],
     "hash": [
-        "79522cbb897c813b9952bb91c83aeb4b3940af26cd7b86ba316595227dd7c4b4",
-        "9e90797ae603c3da4c6c3c0d4b662f4d6dda6d1305f24af8ed20adb651800bde",
-        "59d93d60aa4f5b7eeb8d6e7012d927d631da6fde40fe792d951f0b83f99dfc59",
-        "763f78bfc13f5a83ecac5699f58a4056e50438b2335e599dd56a84690931b2de"
+        "07a25fd2cfd34a2240099ad9d0e15dc40e8e8060a790c9a8af8aa05f317d5529",
+        "a7b0928a72ae7f0a347a31f85a26e4fa435fe2dcc7ed7470d543855d6ec8f3ae",
+        "e6870b293886e399f81abf9f9e2fa11ee7bf33b7d69881c4fa1858c28f8e5989",
+        "3565616d9ea6c186729da966422bc7b498d2507e557fb74293e6852d10447625"
     ],
     "checkver": "github",
     "autoupdate": {
