@@ -1,10 +1,10 @@
 {
-    "version": "1.079",
+    "version": "1.081",
     "license": "OFL-1.1",
     "homepage": "https://github.com/arrowtype/recursive",
-    "url": "https://github.com/arrowtype/recursive/releases/download/v1.079/ArrowType-Recursive-1.079.zip",
-    "hash": "e8499836cb7656d33d82ebbf4a24c8a660ceaa69909849764b93d7fa251c9053",
-    "extract_dir": "ArrowType-Recursive-1.079\\Recursive_Desktop",
+    "url": "https://github.com/arrowtype/recursive/releases/download/v1.081/ArrowType-Recursive-1.081.zip",
+    "hash": "4ca4ae80184d0600b2e4ecacd70631328ed144bd9d46961c84872d273299c677",
+    "extract_dir": "ArrowType-Recursive-1.081\\Recursive_Desktop",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/arrowtype/recursive/releases/download/v$version/ArrowType-Recursive-$version.zip",
