@@ -1,9 +1,9 @@
 {
-    "version": "1.4.2",
+    "version": "1.5.0",
     "license": "MIT",
     "homepage": "https://rubjo.github.io/victor-mono/",
     "url": "https://rubjo.github.io/victor-mono/VictorMonoAll.zip",
-    "hash": "f2ed8df22899bf28672dd782048a5a0d630ac752062a589fc584c1e37dea0282",
+    "hash": "961cd728317e25eb57f1f2d0714a6e1bb4edec22985b1264613faf9e254d060f",
     "extract_dir": "TTF",
     "checkver": {
         "github": "https://github.com/rubjo/victor-mono"
