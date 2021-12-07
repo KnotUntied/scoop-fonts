@@ -1,9 +1,9 @@
 {
-    "version": "1.8.0",
+    "version": "1.7.2",
     "license": "OFL-1.1",
     "homepage": "https://github.com/belluzj/fantasque-sans",
-    "url": "https://github.com/belluzj/fantasque-sans/releases/download/v1.8.0/FantasqueSansMono-LargeLineHeight-NoLoopK.zip",
-    "hash": "7ba83fd20c31b3016b116fde80bbf2ccf362f8894c3f113786d3ad5fa2afc3fe",
+    "url": "https://github.com/belluzj/fantasque-sans/releases/download/v1.7.2/FantasqueSansMono-LargeLineHeight-NoLoopK.zip",
+    "hash": "5aa59f35d16f67ea2e28d6b49e374ee492a2f9b922c244d299c0486af219c75b",
     "extract_dir": "TTF",
     "checkver": "github",
     "autoupdate": {
