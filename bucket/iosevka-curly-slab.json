@@ -1,9 +1,9 @@
 {
-    "version": "11.2.6",
+    "version": "11.2.5",
     "license": "OFL-1.1",
     "homepage": "https://github.com/be5invis/Iosevka",
-    "url": "https://github.com/be5invis/Iosevka/releases/download/v11.2.6/super-ttc-iosevka-curly-slab-11.2.6.zip",
-    "hash": "9852156eebf4cb42e1cf470aa9b7233dad44ade325e76650d92f70b70e244298",
+    "url": "https://github.com/be5invis/Iosevka/releases/download/v11.2.5/super-ttc-iosevka-curly-slab-11.2.5.zip",
+    "hash": "bd8533b0d7d5a4af0816ff3dde7c5e9c052383ecaee01fec4cb11e116ae7419f",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/be5invis/Iosevka/releases/download/v$version/super-ttc-iosevka-curly-slab-$version.zip"
