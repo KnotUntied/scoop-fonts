@@ -1,9 +1,10 @@
 import json
 import os
+import re
 from pathlib import Path
+
 import requests
 from bs4 import BeautifulSoup
-
 from dotenv import load_dotenv
 from github import Github
 
@@ -20,6 +21,7 @@ if ACCESS_TOKEN in ["", None]:
     raise Exception(except_msg)
 
 desc_cache = {}
+version_pattern = r"\n\s*\"version\": \".*\",\n"
 
 
 def iterate_bucket(bucket_loc="../bucket", g=None):
@@ -30,7 +32,11 @@ def iterate_bucket(bucket_loc="../bucket", g=None):
 
     for file in bucket_loc.iterdir():
         with open(file, "r") as f:
-            j = json.load(f)
+            try:
+                j = json.load(f)
+            except json.decoder.JSONDecodeError:
+                print("Invalid JSON", file.name, "skipping...")
+                continue
             if "description" in j:
                 print(file.name, "already has a description")
                 continue
@@ -59,13 +65,24 @@ def iterate_bucket(bucket_loc="../bucket", g=None):
                     if file.name == "courierprime.json":
                         desc = "It's Courier, just better"
                     else:
-                        desc = ".".join(file.name.split(".")[:-1]).title()
+                        desc = "It's Courier, just better - " + ".".join(file.name.split(".")[:-1]).title()
         desc = desc.strip()
         if desc.lower() == "google fonts":
             desc = desc + " - " + ".".join(file.name.split(".")[:-1]).title()
 
         with open(file, "w") as f:
-            j["description"] = desc
+            datastr = json.dumps(j, indent=4)
+            x = {}
+            x["description"] = desc
+            descstr = json.dumps(x)
+            m = re.search(version_pattern, datastr)
+            parts = re.split(version_pattern, datastr)
+            assert len(parts) == 2
+            data = (
+                parts[0] + m.group(0) + " " * 4 + descstr[1:][:-1] + "," + "\n" + parts[1]
+            )
+            f.write(data)
+            f.write("\n")
 
 
 def get_desc(repo, g=None):
