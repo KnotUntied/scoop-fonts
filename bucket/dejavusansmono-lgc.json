@@ -1,5 +1,6 @@
 {
     "version": "2.37",
+    "description": "DejaVu Fonts",
     "license": "https://github.com/dejavu-fonts/dejavu-fonts/blob/master/LICENSE",
     "homepage": "https://dejavu-fonts.github.io/",
     "url": "https://github.com/dejavu-fonts/dejavu-fonts/releases/download/version_2_37/dejavu-lgc-fonts-ttf-2.37.zip",

@@ -1,5 +1,6 @@
 {
     "version": "2.001",
+    "description": "Monospaced font for long-form writing",
     "license": "OFL-1.1",
     "homepage": "https://github.com/tonsky/font-writer",
     "url": [

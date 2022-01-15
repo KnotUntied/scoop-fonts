@@ -1,5 +1,6 @@
 {
     "version": "1.0",
+    "description": "The xkcd font",
     "license": "CC-BY-NC-3.0",
     "homepage": "https://github.com/ipython/xkcd-font",
     "url": "https://github.com/ipython/xkcd-font/raw/master/xkcd-script/font/xkcd-script.ttf",

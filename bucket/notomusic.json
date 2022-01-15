@@ -1,5 +1,6 @@
 {
     "version": "2.000",
+    "description": "Noto fonts, except for CJK and emoji",
     "license": "OFL-1.1",
     "homepage": "https://github.com/googlefonts/noto-fonts",
     "url": "https://github.com/googlefonts/noto-fonts/raw/main/hinted/ttf/NotoMusic/NotoMusic-Regular.ttf",
