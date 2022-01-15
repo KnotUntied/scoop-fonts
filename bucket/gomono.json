@@ -1,5 +1,6 @@
 {
     "version": "2.008",
+    "description": "Go fonts - The Go Programming Language",
     "license": "https://github.com/golang/image/blob/master/font/gofont/ttfs/README",
     "homepage": "https://blog.golang.org/go-fonts",
     "url": [
