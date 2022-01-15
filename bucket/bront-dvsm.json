@@ -1,5 +1,6 @@
 {
     "version": "2.33",
+    "description": "A few tweaked fonts geared for programming",
     "license": "https://raw.githubusercontent.com/chrismwendt/bront/master/DejaVuSansMono-LICENSE.txt",
     "homepage": "https://github.com/chrismwendt/bront",
     "url": "https://github.com/chrismwendt/bront/raw/master/DejaVuSansMono-Bront.ttf",

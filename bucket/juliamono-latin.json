@@ -1,5 +1,6 @@
 {
     "version": "0.043",
+    "description": "repository for JuliaMono, a monospaced font with reasonable Unicode support.",
     "license": "OFL-1.1",
     "homepage": "https://github.com/cormullion/juliamono",
     "url": "https://github.com/cormullion/juliamono/releases/download/v0.043/JuliaMono.zip",

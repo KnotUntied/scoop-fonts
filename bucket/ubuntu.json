@@ -1,5 +1,6 @@
 {
     "version": "0.83",
+    "description": "Ubuntu font",
     "license": "https://github.com/daltonmaag/ubuntu/blob/master/LICENCE.txt",
     "homepage": "https://design.ubuntu.com/font/",
     "url": "https://github.com/daltonmaag/ubuntu/releases/download/v0.83/ubuntu-font-family-0.83.zip",

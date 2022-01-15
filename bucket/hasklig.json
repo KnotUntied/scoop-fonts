@@ -1,5 +1,6 @@
 {
     "version": "1.2",
+    "description": "Hasklig - a code font with monospaced ligatures",
     "license": "OFL-1.1",
     "homepage": "https://github.com/i-tu/Hasklig",
     "url": "https://github.com/i-tu/Hasklig/releases/download/v1.2/Hasklig-1.2.zip",
