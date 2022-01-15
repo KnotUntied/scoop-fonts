@@ -9,7 +9,7 @@
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/SSNikolaevich/DejaVuSansCode/releases/download/v$version/dejavu-code-lgc-ttf-$version.zip",
-        "extract_dir": "dejavu-code-lgc-ttf-$version\\ttf",
+        "extract_dir": "dejavu-code-lgc-ttf-$version\\ttf"
     },
     "installer": {
         "script": [
