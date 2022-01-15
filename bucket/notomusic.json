@@ -2,8 +2,8 @@
     "version": "2.000",
     "license": "OFL-1.1",
     "homepage": "https://github.com/googlefonts/noto-fonts",
-    "url": "https://github.com/googlefonts/noto-fonts/raw/master/hinted/ttf/NotoMusic/NotoMusic-Regular.ttf",
-    "hash": "94f71cebcd6d5b9db80cf1d592cc6386cb0444729acd66dd1ae8f3361abba272",
+    "url": "https://github.com/googlefonts/noto-fonts/raw/main/hinted/ttf/NotoMusic/NotoMusic-Regular.ttf",
+    "hash": "a2ac140fbb2c401bc77aeb8e7dd791080e96388984b5ba12a1bac4f8fc7bc3ae",
     "installer": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",

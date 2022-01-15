@@ -8,7 +8,7 @@
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/SSNikolaevich/DejaVuSansCode/releases/download/v$version/dejavu-code-ttf-$version.zip",
-        "extract_dir": "dejavu-code-ttf-$version\\ttf",
+        "extract_dir": "dejavu-code-ttf-$version\\ttf"
     },
     "installer": {
         "script": [
