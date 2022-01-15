@@ -1,5 +1,5 @@
 {
-    "version": "2.242",
+    "version": "2.251",
     "description": "JetBrains Mono. A typeface for developers​",
     "license": "OFL-1.1",
     "homepage": "https://www.jetbrains.com/lp/mono/",
@@ -8,8 +8,8 @@
         "https://github.com/JetBrains/JetBrainsMono/raw/master/fonts/variable/JetBrainsMono-Italic%5Bwght%5D.ttf"
     ],
     "hash": [
-        "86334999ddbb3db90276699c7e445df3fd87d109f9c3577394b7f612b474a5a6",
-        "74c1b4a6881c13d077fa6299d42cb91173dfc0b4b6dfca20398b29993e9829e0"
+        "06baead9c9e9e22b0fef263b6e4dbaabed0e74b6443985e7e105e21a633ec0e8",
+        "3673bf5cd512bab50585cd805f6ce3637fe7ca01fea1720fef9fbe8cf085d53f"
     ],
     "installer": {
         "script": [
@@ -37,7 +37,7 @@
     "autoupdate": {
         "url": [
             "https://github.com/JetBrains/JetBrainsMono/raw/master/fonts/variable/JetBrainsMono%5Bwght%5D.ttf",
-            "https://github.com/JetBrains/JetBrainsMono/raw/master/fonts/variable/JetBrainsMono-Italic%5Bwght%5D.ttf",
-        ],
+            "https://github.com/JetBrains/JetBrainsMono/raw/master/fonts/variable/JetBrainsMono-Italic%5Bwght%5D.ttf"
+        ]
     }
 }

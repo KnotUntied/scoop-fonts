@@ -3,8 +3,8 @@
     "description": "Noto fonts, except for CJK and emoji",
     "license": "OFL-1.1",
     "homepage": "https://github.com/googlefonts/noto-fonts",
-    "url": "https://github.com/googlefonts/noto-fonts/raw/master/hinted/ttf/NotoSansMath/NotoSansMath-Regular.ttf",
-    "hash": "c7a16199340a4343d7051ef1c1fd7527b70d34f50e40a879bcdc4574d0bf99fd",
+    "url": "https://github.com/googlefonts/noto-fonts/raw/main/hinted/ttf/NotoSansMath/NotoSansMath-Regular.ttf",
+    "hash": "80b61fd613d3519197e64fff6f7e71fdc7f3e6526440ea4115b554ef7fd59af7",
     "installer": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
