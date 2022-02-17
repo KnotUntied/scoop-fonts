@@ -1,10 +1,10 @@
 {
-    "version": "2.220",
+    "version": "2.300",
     "description": "League Mono Variable",
     "license": "OFL-1.1",
     "homepage": "https://tylerfinck.com/leaguemonovariable/",
-    "url": "https://github.com/theleagueof/league-mono/releases/download/2.220/LeagueMono-2.220.zip",
-    "hash": "79135d873ee5c6fc4b84926bfc96fede198259ccb65d26edce8badf2fad42694",
+    "url": "https://github.com/theleagueof/league-mono/releases/download/2.300/LeagueMono-2.300.zip",
+    "hash": "3b685afec90f862193974fa6384ac5b472d9049356ee97591374573f1d929f64",
     "extract_dir": "variable\\TTF",
     "checkver": {
         "github": "https://github.com/sursly/leaguemono"
