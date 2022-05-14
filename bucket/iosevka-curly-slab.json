@@ -1,10 +1,10 @@
 {
-    "version": "15.3.0",
+    "version": "15.3.1",
     "description": "Versatile typeface for code, from code.",
     "license": "OFL-1.1",
     "homepage": "https://github.com/be5invis/Iosevka",
-    "url": "https://github.com/be5invis/Iosevka/releases/download/v15.3.0/super-ttc-iosevka-curly-slab-15.3.0.zip",
-    "hash": "e518f134920731e3cc02f53543eb467c57bf4fd84ae39b51aa60462d937beae1",
+    "url": "https://github.com/be5invis/Iosevka/releases/download/v15.3.1/super-ttc-iosevka-curly-slab-15.3.1.zip",
+    "hash": "05ef1a170eac28ef4124945bfb863000a2a65b80b5d4786cc85e99f76cbf456c",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/be5invis/Iosevka/releases/download/v$version/super-ttc-iosevka-curly-slab-$version.zip"
