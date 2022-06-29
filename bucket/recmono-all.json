@@ -1,11 +1,11 @@
 {
-    "version": "1.082",
+    "version": "1.084",
     "description": "Recursive Mono & Sans is a variable font family for code & UI",
     "license": "OFL-1.1",
     "homepage": "https://github.com/arrowtype/recursive",
-    "url": "https://github.com/arrowtype/recursive/releases/download/v1.082/ArrowType-Recursive-1.082.zip",
-    "hash": "24c08f2967ccb6c8629f19c433eb71bebf898242cb81dc9dbb4399af361c7deb",
-    "extract_dir": "ArrowType-Recursive-1.082\\Recursive_Code",
+    "url": "https://github.com/arrowtype/recursive/releases/download/v1.084/ArrowType-Recursive-1.084.zip",
+    "hash": "db1f760fefe164644dc2e5156c01cb6d47fe05e28fd1f949eb4d6f65abb9f19a",
+    "extract_dir": "ArrowType-Recursive-1.084\\Recursive_Code",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/arrowtype/recursive/releases/download/v$version/ArrowType-Recursive-$version.zip",
