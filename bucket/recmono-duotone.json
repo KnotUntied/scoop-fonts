@@ -1,19 +1,19 @@
 {
-    "version": "1.084",
+    "version": "1.085",
     "description": "Recursive Mono & Sans is a variable font family for code & UI",
     "license": "OFL-1.1",
     "homepage": "https://github.com/arrowtype/recursive",
     "url": [
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.084/Recursive_Code/RecMonoDuotone/RecMonoDuotone-Bold-1.084.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.084/Recursive_Code/RecMonoDuotone/RecMonoDuotone-BoldItalic-1.084.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.084/Recursive_Code/RecMonoDuotone/RecMonoDuotone-Italic-1.084.ttf",
-        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.084/Recursive_Code/RecMonoDuotone/RecMonoDuotone-Regular-1.084.ttf"
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.085/Recursive_Code/RecMonoDuotone/RecMonoDuotone-Bold-1.085.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.085/Recursive_Code/RecMonoDuotone/RecMonoDuotone-BoldItalic-1.085.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.085/Recursive_Code/RecMonoDuotone/RecMonoDuotone-Italic-1.085.ttf",
+        "https://github.com/arrowtype/recursive/raw/main/fonts/ArrowType-Recursive-1.085/Recursive_Code/RecMonoDuotone/RecMonoDuotone-Regular-1.085.ttf"
     ],
     "hash": [
-        "e16180466aacac8591cc81600fffab24e0c5cb0cb7f8e2731789e8cc29eff85a",
-        "825440499305366d5bfe14710a712a3e10ee7c2f6a98a5fdc445205197006a87",
-        "8928b9dddb254a671523e095eb95d3777a530f95b2ae9066bfd7f9f35ad539d4",
-        "4e1e03595c9f61b52ff62c913b3db3453fe3c58dd700cc151dc815ebcda355cc"
+        "25fd3352f579d630bac6239295eaf6a51185fb066e4392e33e3eda25f0ab11ad",
+        "40a356f18a9fe14b835c3c4b5b0cee45c19c0e410e614fa2a4d5856d610d4049",
+        "83db5b59ee5188fef25f7c6d3cbd67803a879ac229baef3e47b4b609cbd78760",
+        "c8e882d1de2e029447978778f6153497ae16ed3a907201124cb58351fd586a9b"
     ],
     "checkver": "github",
     "autoupdate": {
