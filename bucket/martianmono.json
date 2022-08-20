@@ -1,10 +1,10 @@
 {
-    "version": "0.9.0",
+    "version": "0.9.1",
     "description": "Free and open-source monospaced font from Evil Martians",
     "license": "OFL-1.1",
     "homepage": "https://github.com/evilmartians/mono",
-    "url": "https://github.com/evilmartians/mono/releases/download/v0.9.0/martian-mono-0.9.0-ttf.zip",
-    "hash": "31f853d784c74e65a170ab93b1b3b45313eefce8249d39c0d35d048be50700eb",
+    "url": "https://github.com/evilmartians/mono/releases/download/v0.9.1/martian-mono-0.9.1-ttf.zip",
+    "hash": "877b6d9109bede51484c1ce861186051094a8d9686d17bafbf323c40d6de541d",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/evilmartians/mono/releases/download/v$version/martian-mono-$version-ttf.zip"
