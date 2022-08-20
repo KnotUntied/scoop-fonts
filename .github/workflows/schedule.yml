@@ -5,12 +5,12 @@ name: Excavator
 jobs:
   excavate:
     name: Excavator
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
-    - uses: actions/checkout@master
-    - name: Excavate
-      uses: Ash258/Scoop-GithubActions@stable
+    - uses: actions/checkout@main
+    - name: Excavator
+      uses: ScoopInstaller/Scoop-GithubActions@main
       env:
-        GITH_EMAIL: 20182921+KnotUntied@users.noreply.github.com
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SKIP_UPDATED: '1'
+        THROW_ERROR: '0'

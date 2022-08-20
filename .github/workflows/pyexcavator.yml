@@ -10,8 +10,8 @@ jobs:
     - uses: actions/checkout@master
     - name: PyExcavate
       run: |
-        git config --local user.email "20182921+KnotUntied@users.noreply.github.com"
-        git config --local user.name "KnotUntied"
+        git config user.name github-actions
+        git config user.email github-actions@github.com
         python updater.py
     - name: Push changes
       uses: ad-m/github-push-action@v0.6.0
