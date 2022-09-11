@@ -1,10 +1,10 @@
 {
-    "version": "1.3",
+    "version": "1.4",
     "description": "a programming typeface",
     "license": "OFL-1.1",
     "homepage": "https://github.com/madmalik/mononoki",
-    "url": "https://github.com/madmalik/mononoki/releases/download/1.3/mononoki.zip",
-    "hash": "37291a9371b4127bb03e012ace7ecc79375f6eccfa688be81a36ccc5d29e3ee6",
+    "url": "https://github.com/madmalik/mononoki/releases/download/1.4/mononoki.zip",
+    "hash": "f58ff59848561aee25cc72b4fde6cbb47b916ee7f920006476597fd5bbc00bb0",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/madmalik/mononoki/releases/download/$version/mononoki.zip"
