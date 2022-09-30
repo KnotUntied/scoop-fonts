@@ -1,20 +1,19 @@
 {
     "version": "2.242",
-    "description": "JetBrains Mono. A typeface for developers​",
+    "description": "JetBrains Mono - the free and open-source typeface for developers",
     "license": "OFL-1.1",
-    "homepage": "https://www.jetbrains.com/lp/mono/",
-    "url": [
-        "https://github.com/JetBrains/JetBrainsMono/raw/master/fonts/variable/JetBrainsMono%5Bwght%5D.ttf",
-        "https://github.com/JetBrains/JetBrainsMono/raw/master/fonts/variable/JetBrainsMono-Italic%5Bwght%5D.ttf"
-    ],
-    "hash": [
-        "06baead9c9e9e22b0fef263b6e4dbaabed0e74b6443985e7e105e21a633ec0e8",
-        "3673bf5cd512bab50585cd805f6ce3637fe7ca01fea1720fef9fbe8cf085d53f"
-    ],
+    "homepage": "https://github.com/JetBrains/JetBrainsMono",
+    "url": "https://github.com/JetBrains/JetBrainsMono/releases/download/v2.242/JetBrainsMono-2.242.zip",
+    "hash": "4e315b4ef176ce7ffc971b14997bdc8f646e3d1e5b913d1ecba3a3b10b4a1a9f",
+    "extract_dir": "fonts/variable",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/JetBrains/JetBrainsMono/releases/download/v$version/JetBrainsMono-$version.zip"
+    },
     "installer": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
-            "Get-ChildItem $dir -Filter '*.ttf' -Recurse | ForEach-Object {",
+            "Get-ChildItem $dir -Filter 'JetBrainsMonoNL-*.ttf' -Recurse | ForEach-Object {",
             "  New-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value $_.Name -Force | Out-Null",
             "  Copy-Item $_.FullName -destination \"$env:windir\\Fonts\"",
             "}",
@@ -29,15 +28,6 @@
             "  Remove-Item \"$env:windir\\Fonts\\$($_.Name)\" -Force -ErrorAction SilentlyContinue",
             "}",
             "Write-Host \"'JetBrains Mono' variable TTF files have been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
-        ]
-    },
-    "checkver": {
-        "github": "https://github.com/JetBrains/JetBrainsMono"
-    },
-    "autoupdate": {
-        "url": [
-            "https://github.com/JetBrains/JetBrainsMono/raw/master/fonts/variable/JetBrainsMono%5Bwght%5D.ttf",
-            "https://github.com/JetBrains/JetBrainsMono/raw/master/fonts/variable/JetBrainsMono-Italic%5Bwght%5D.ttf"
         ]
     }
 }
