@@ -4,7 +4,7 @@
     "license": "OFL-1.1",
     "homepage": "https://github.com/madmalik/mononoki",
     "url": "https://github.com/madmalik/mononoki/releases/download/1.4/mononoki.zip",
-    "hash": "f58ff59848561aee25cc72b4fde6cbb47b916ee7f920006476597fd5bbc00bb0",
+    "hash": "e0b8223a524f7f4dfa6a25f1bc9b061f5303b114a3837aaad860446bca71a857",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/madmalik/mononoki/releases/download/$version/mononoki.zip"
