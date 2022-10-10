@@ -1,10 +1,10 @@
 {
-    "version": "16.3.2",
+    "version": "16.3.3",
     "description": "Versatile typeface for code, from code.",
     "license": "OFL-1.1",
     "homepage": "https://github.com/be5invis/Iosevka",
-    "url": "https://github.com/be5invis/Iosevka/releases/download/v16.3.2/super-ttc-iosevka-aile-16.3.2.zip",
-    "hash": "18dbd4f8b5b755f9719cb86d9cf3612e6aa60beda32af6d706d5c95e4f7ca829",
+    "url": "https://github.com/be5invis/Iosevka/releases/download/v16.3.3/super-ttc-iosevka-aile-16.3.3.zip",
+    "hash": "ca09dabf6d499d8d9a980c0f1468f90d4b6e809bf0cb0b6cd4f830d2feace178",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/be5invis/Iosevka/releases/download/v$version/super-ttc-iosevka-aile-$version.zip"
