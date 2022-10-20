@@ -1,5 +1,5 @@
 {
-    "version": "1.0.2",
+    "version": "2.0.0",
     "description": "A friendly, simple geometric sans serif font.",
     "license": "OFL-1.1",
     "homepage": "https://github.com/erikdkennedy/figtree",
@@ -13,13 +13,13 @@
         "https://github.com/erikdkennedy/figtree/raw/master/fonts/ttf/Figtree-SemiBold.ttf"
     ],
     "hash": [
-        "3af8226cd7966a500dd0441f978571cfcea7ad09a8135784ed0a7552bfaaf668",
-        "9cebd06677f4761cfa3537d6451996788a4bbf3d1e37f79a0002ce4c48ddaf52",
-        "8d5330573fd44525af95b8f3422fc6440ff5ebf36c20bdf64f2a6c134a107d5a",
-        "4a323979adcc4462a5963bd4dac8370442aa0bd8f32971ced81606d65ade1284",
-        "50e9db2677bfc0eb8f3a1af53dccd08d73b8b5a519dd4ffe42366ce0bb4cbaa4",
-        "913998ee1aa43443c24f81bb0070560ed8e6689691ac44a1b05107c6038b29a5",
-        "0c9656a9f5f3abd9ca0e0d6e7f387312adcd8c574abe8fe348e70f7603983fb7"
+        "922b6691df26ee0cb260d799a3cfc7601bc9a51c357694b88ad4e46b51b001ac",
+        "c531418647e8876d2b63aa26d7e4a8baf0c46b8f8c110ddbe07a29fddc67ceef",
+        "19500a73f73ea81d750a780cc5a95778f3e06b35413d967b230fd054f8d6c4a1",
+        "0079cb0a42ec3efc5f4f95a5d733423bfaee0c4a6e078344fa95e35d00af0747",
+        "c00af32ca4fe947c0c0ffa6fb95d1bd800a6f204c14a721f926f4ff2fa6a57d6",
+        "e8a6e07a6fc5eb1b0a49168d2e88e1289e90d7c2b02606b02aa4972f8a067a11",
+        "c05f45a99bf58abf9cd9363ba7304cda8f6212857179f230ff83b70cc424b6f3"
     ],
     "checkver": "github",
     "autoupdate": {
