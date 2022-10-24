@@ -1,10 +1,10 @@
 {
-    "version": "1.003",
+    "version": "1.010",
     "description": "Helvetica Monospace Coding Font",
     "license": "OFL-1.1",
     "homepage": "https://github.com/weiweihuanghuang/fragment-mono",
-    "url": "https://github.com/weiweihuanghuang/fragment-mono/releases/download/1.003/fragment-mono-fonts.zip",
-    "hash": "ed7388863c36c33d33e801d090ecf865cbb7f5d98719f9ab735a21c116691710",
+    "url": "https://github.com/weiweihuanghuang/fragment-mono/releases/download/1.010/fragment-mono-fonts.zip",
+    "hash": "66e92f9683ce9f0c1cfcdcef128eab141f28b4eeca8aca4ce58b5a0b0f22328b",
     "extract_dir": "fragment-mono-fonts\\fonts\\ttf",
     "checkver": "github",
     "autoupdate": {
