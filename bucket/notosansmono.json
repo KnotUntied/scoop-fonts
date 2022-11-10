@@ -79,6 +79,20 @@
         "653702a6a44dbcaf4577d1c086ff9f7123f8f8d2ba2671a6da82db3e9bd3faf9",
         "3f19cd45c6ddee11185fec274c69212e461b7f95766a239bf6657c7daf88fb76"
     ],
+    "pre_install": [
+        "Add-Type -AssemblyName PresentationCore",
+        "$typefaces = [System.Windows.Media.Fonts]::GetTypefaces($original_dir + '\\')",
+        "foreach ($face in $typefaces) {",
+        "    $glyph = $null",
+        "    if ($face.TryGetGlyphTypeface([ref]$glyph)) {",
+        "        if ($glyph.Version -ne $version) {",
+        "            error \"Font version mismatch ($($glyph.Version) vs. $version): $($face.FontFamily.Source)\"",
+        "            exit 1",
+        "        }",
+        "    }",
+        "}",
+        "info 'Font version check passed.'"
+    ],
     "installer": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required.\"; exit 1 }",
