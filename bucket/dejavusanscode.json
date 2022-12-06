@@ -1,11 +1,11 @@
 {
-    "version": "1.2.2",
+    "version": "1.2.1",
     "description": "Monospaced font with programming ligatures based on DejaVu Sans Mono",
     "license": "https://github.com/SSNikolaevich/DejaVuSansCode/blob/master/LICENSE",
     "homepage": "https://github.com/SSNikolaevich/DejaVuSansCode",
-    "url": "https://github.com/SSNikolaevich/DejaVuSansCode/releases/download/v1.2.2/dejavu-code-ttf-1.2.2.zip",
-    "hash": "1bb7b305e9e580a12baf717c8d10c76e3c75114d5b2f0cd0ab242ba6921dcbc8",
-    "extract_dir": "dejavu-code-ttf-1.2.2\\ttf",
+    "url": "https://github.com/SSNikolaevich/DejaVuSansCode/releases/download/v1.2.1/dejavu-code-ttf-1.2.1.zip",
+    "hash": "f8d0e06add25fb4e0671d6c95eefc84e28eccd0b7f7dd228a42edf6aba0041a2",
+    "extract_dir": "dejavu-code-ttf-1.2.1\\ttf",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/SSNikolaevich/DejaVuSansCode/releases/download/v$version/dejavu-code-ttf-$version.zip",
