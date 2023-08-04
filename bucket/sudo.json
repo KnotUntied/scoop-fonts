@@ -1,10 +1,10 @@
 {
-    "version": "0.71",
+    "version": "0.72",
     "description": "Sudo Coding Font",
     "license": "OFL-1.1",
     "homepage": "https://www.kutilek.de/sudo-font/",
-    "url": "https://github.com/jenskutilek/sudo-font/releases/download/v0.71/sudo.zip",
-    "hash": "be9b7a06f84f7010fe9bfd0525af802154323e512f0cb92463db7e1a075d7e55",
+    "url": "https://github.com/jenskutilek/sudo-font/releases/download/v0.72/sudo.zip",
+    "hash": "1d6e12ea54272bc059b083d0192dd96336650102fa3ced51dfdc82da67d917f6",
     "extract_dir": "sudo",
     "checkver": {
         "github": "https://github.com/jenskutilek/sudo-font"
