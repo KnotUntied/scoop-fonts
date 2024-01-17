@@ -1,15 +1,15 @@
 {
-    "version": "36",
+    "version": "37",
     "description": "succulent monospaced programming font",
     "license": "MIT",
     "homepage": "https://github.com/blobject/agave",
     "url": [
-        "https://github.com/blobject/agave/releases/download/v36/Agave-Bold.ttf",
-        "https://github.com/blobject/agave/releases/download/v36/Agave-Regular.ttf"
+        "https://github.com/blobject/agave/releases/download/v37/Agave-Bold.ttf",
+        "https://github.com/blobject/agave/releases/download/v37/Agave-Regular.ttf"
     ],
     "hash": [
-        "4934e821cfb81fdc848986522bcfab2bfee69e4fa5b442be268e1a14bb6e3d5e",
-        "08009e590cbd0d3284433ba673c9490409ade0fde8c3e94e98942764c58d9a6a"
+        "031fe5fd12b2734de56b0d138622da73fec71d5e3e63189b2b37199e366ce952",
+        "bd7d5584482acbdad0ee13e6020046c4ac88b36412018a990bf98bff60483ab0"
     ],
     "checkver": "github",
     "autoupdate": {
