@@ -1,10 +1,10 @@
 {
-    "version": "10.1.0",
+    "version": "4.5.0",
     "description": "Build results and TOML file for personalized version of Iosevka",
     "license": "OFL-1.1",
     "homepage": "https://github.com/KnotUntied/iosevka-custom",
-    "url": "https://github.com/KnotUntied/iosevka-custom/releases/download/10.1.0/iosevka-custom-10.1.0.zip",
-    "hash": "7306a068c34ca535d1644c4302a418669caa3815ffc2df3b3cd334df0a304686",
+    "url": "https://github.com/KnotUntied/iosevka-custom/releases/download/4.5.0/iosevka-custom-4.5.0.zip",
+    "hash": "ea1b48dd63967c920139533180d7012fda09563c23aa02140483e2311e4661a9",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/KnotUntied/iosevka-custom/releases/download/$version/iosevka-custom-$version.zip"
