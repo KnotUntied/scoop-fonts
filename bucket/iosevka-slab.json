@@ -7,7 +7,7 @@
     "hash": "9cfce3ccf22dfe978848c42addc76397098a868512ceb77ef60637fdcf694cb0",
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/be5invis/Iosevka/releases/download/v$version/super-ttc-iosevka-slab-$version.zip"
+        "url": "https://github.com/be5invis/Iosevka/releases/download/v$version/SuperTTC-IosevkaSlab-$version.zip"
     },
     "installer": {
         "script": [

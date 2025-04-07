@@ -7,7 +7,7 @@
     "hash": "b12da78e9d6f272b1fc23cd6ee8de5d1103f11a322cd5432cfcf3e30b5c03920",
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/be5invis/Iosevka/releases/download/v$version/super-ttc-iosevka-curly-$version.zip"
+        "url": "https://github.com/be5invis/Iosevka/releases/download/v$version/SuperTTC-IosevkaCurly-$version.zip"
     },
     "installer": {
         "script": [

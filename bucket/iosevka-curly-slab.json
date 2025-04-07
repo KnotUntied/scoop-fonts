@@ -7,7 +7,7 @@
     "hash": "06e4ac5cf44c8228fc491b352fbe41dc74ecf9ae574b089edbeccb14f99c2af5",
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/be5invis/Iosevka/releases/download/v$version/super-ttc-iosevka-curly-slab-$version.zip"
+        "url": "https://github.com/be5invis/Iosevka/releases/download/v$version/SuperTTC-IosevkaCurlySlab-$version.zip"
     },
     "installer": {
         "script": [

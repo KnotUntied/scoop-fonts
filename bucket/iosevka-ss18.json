@@ -7,7 +7,7 @@
     "hash": "49b416e4f14d5da0597e00d53efdc380dedadf791d229c0a23bb0c29280fc969",
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/be5invis/Iosevka/releases/download/v$version/super-ttc-iosevka-ss18-$version.zip"
+        "url": "https://github.com/be5invis/Iosevka/releases/download/v$version/SuperTTC-IosevkaSS18-$version.zip"
     },
     "installer": {
         "script": [
